@@ -1,0 +1,70 @@
+name: Sync and Convert Rules to cursor-rules/ directory
+
+on:
+  push:
+    paths:
+      - "rules/**"
+
+jobs:
+  sync-rules:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Required to push changes
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2 # Enables full diffing with previous commit
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Ensure cursor-rules/ directory exists
+        run: mkdir -p cursor-rules/
+
+      - name: Sync changed .md files to cursor-rules/
+        run: |
+          git diff --name-status HEAD^ HEAD | while read status file1 file2; do
+            if [[ "$status" == D && "$file1" == rules/*.md ]]; then
+              # Deleted file
+              filename=$(basename "$file1" .md)
+              target="cursor-rules/$filename.mdc"
+              echo "Deleting $target"
+              rm -f "$target"
+
+            elif [[ "$status" == R* && "$file1" == rules/*.md && "$file2" == rules/*.md ]]; then
+              # Renamed file
+              oldname=$(basename "$file1" .md)
+              newname=$(basename "$file2" .md)
+              oldtarget="cursor-rules/$oldname.mdc"
+              newtarget="cursor-rules/$newname.mdc"
+              echo "Renamed: $file1 → $file2"
+              echo "Removing old target: $oldtarget"
+              rm -f "$oldtarget"
+              echo "Copying $file2 to $newtarget"
+              cp "$file2" "$newtarget"
+
+            elif [[ "$file1" == rules/*.md ]]; then
+              # Added or Modified file
+              filename=$(basename "$file1" .md)
+              target="cursor-rules/$filename.mdc"
+              echo "Copying $file1 → $target"
+              cp "$file1" "$target"
+            fi
+          done
+
+      - name: Commit and push updates
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add cursor-rules/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync: Updated cursor-rules/ based on rules/ changes"
+            git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }} HEAD:${{ github.ref_name }}
+          fi

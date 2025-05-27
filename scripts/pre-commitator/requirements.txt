@@ -1,0 +1,19 @@
+# Core dependencies
+pre-commit==4.2.0
+bandit==1.8.3
+black==25.1.0
+flake8==7.0.0
+isort==5.13.2
+lizard==1.17.10
+
+# Security tools
+semgrep==1.50.0
+pip-audit==2.7.0
+
+# Code quality helpers
+mypy==1.9.0
+flake8-bugbear==24.2.6
+
+# Utility dependencies
+PyYAML==6.0.1
+colorama==0.4.6

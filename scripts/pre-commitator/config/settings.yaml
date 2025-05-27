@@ -1,0 +1,8 @@
+database:
+  host: localhost
+  port: 5432
+  name: test_db
+
+logging:
+  level: INFO
+  format: '%(asctime)s - %(levelname)s - %(message)s'
