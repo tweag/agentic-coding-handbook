@@ -117,3 +117,7 @@ Explain what’s broken and how to fix it, but do not modify any files yet.
 | Checkpoints & Resets        | Keeps dev environment clean         |
 
 Debugging is where most engineers waste time. With structured prompting, context injection, and thoughtful reasoning, vibe debugging becomes a superpower — not a struggle.
+
+## References
+
+- [Using Copilot to Debug the Front End](https://www.loom.com/share/50de880c8ce5466d9d21c56e9d00bc30?sid=0c35aea6-596f-46e5-a9e3-3e6d6867b6fc)
