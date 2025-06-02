@@ -11,30 +11,28 @@ In vibe coding, this technique is particularly valuable when dealing with comple
 ```txt
 I want you to solve the following problem/task: [DESCRIBE PROBLEM OR TASK HERE]
 
-Your approach should follow these steps:
+## Iterative Solution Process
 
-1. INITIAL SOLUTION: First, provide an initial solution to the problem. Focus on understanding the core requirements and creating a working approach.
+### 1. Initial Solution
+Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-2. ANALYSIS ROUND (3-5 iterations):
-   For each round (starting with round 1):
-   
-   a) CRITICALLY ANALYZE your previous solution, identifying:
-      - Strengths and what aspects work well
-      - Weaknesses, edge cases, and limitations
-      - Potential optimizations or improvements
-      - Assumptions made and their validity
-   
-   b) REFINE AND IMPROVE your solution based on this analysis
-      - Address the identified weaknesses
-      - Implement the optimizations
-      - Consider alternative approaches if needed
-      - Explicitly note what changes you're making and why
+### 2. Analysis Rounds (2-3 iterations)
+For each round:
 
-3. FINAL SOLUTION:
-   After completing the iterative rounds, provide your final, optimized solution with:
-   - A summary of how it evolved through the iterations
-   - Key improvements made at each stage
-   - Any remaining limitations or considerations
+#### a) Critical Analysis
+- Strengths: What works well (2-3 key points)
+- Weaknesses: Edge cases and limitations (2-3 key points)
+- Potential optimizations (1-2 specific improvements)
+
+#### b) Solution Refinement
+- Implement key changes that address the most critical weaknesses
+- Focus only on substantial improvements
+- Note briefly what changed and why
+
+### 3. Last Solution
+Provide your optimized solution with:
+- A brief summary of major improvements (2-3 sentences)
+- Any remaining considerations
 ```
 
 This creates a self-reflective loop that encourages the AI to critically evaluate and improve its own work multiple times.
@@ -56,15 +54,28 @@ Prompt:
 ```txt
 I want you to solve the following problem: Design an algorithm to find a target number in a partially sorted array (elements are sorted in ascending order, then rotated at some pivot).
 
-Your approach should follow these steps:
+## Iterative Solution Process
 
-1. INITIAL SOLUTION: First, provide an initial solution to the problem. Focus on understanding the core requirements and creating a working approach.
+### 1. Initial Solution
+Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-2. ANALYSIS ROUND (3 iterations):
-   [Rest of the standard prompt structure]
+### 2. Analysis Rounds (2-3 iterations)
+For each round:
 
-3. FINAL SOLUTION:
-   [Rest of the standard prompt structure]
+#### a) Critical Analysis
+- Strengths: What works well (2-3 key points)
+- Weaknesses: Edge cases and limitations (2-3 key points)
+- Potential optimizations (1-2 specific improvements)
+
+#### b) Solution Refinement
+- Implement key changes that address the most critical weaknesses
+- Focus only on substantial improvements
+- Note briefly what changed and why
+
+### 3. Last Solution
+Provide your optimized solution with:
+- A brief summary of major improvements (2-3 sentences)
+- Any remaining considerations
 ```
 
 **Expected Outcome:**
@@ -82,15 +93,28 @@ Prompt:
 ```txt
 I want you to solve the following problem: Design a caching strategy for a web application that handles thousands of product queries per minute with data that changes infrequently (once per day).
 
-Your approach should follow these steps:
+## Iterative Solution Process
 
-1. INITIAL SOLUTION: First, provide an initial solution to the problem. Focus on understanding the core requirements and creating a working approach.
+### 1. Initial Solution
+Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-2. ANALYSIS ROUND (4 iterations):
-   [Rest of the standard prompt structure]
+### 2. Analysis Rounds (2-3 iterations)
+For each round:
 
-3. FINAL SOLUTION:
-   [Rest of the standard prompt structure]
+#### a) Critical Analysis
+- Strengths: What works well (2-3 key points)
+- Weaknesses: Edge cases and limitations (2-3 key points)
+- Potential optimizations (1-2 specific improvements)
+
+#### b) Solution Refinement
+- Implement key changes that address the most critical weaknesses
+- Focus only on substantial improvements
+- Note briefly what changed and why
+
+### 3. Last Solution
+Provide your optimized solution with:
+- A brief summary of major improvements (2-3 sentences)
+- Any remaining considerations
 ```
 
 **Expected Outcome:**
@@ -108,15 +132,28 @@ Prompt:
 ```txt
 I want you to solve the following problem: Design a standardized error handling system for a collection of microservices that needs to provide consistent error responses, logging, retries, and circuit breaking.
 
-Your approach should follow these steps:
+## Iterative Solution Process
 
-1. INITIAL SOLUTION: First, provide an initial solution to the problem. Focus on understanding the core requirements and creating a working approach.
+### 1. Initial Solution
+Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-2. ANALYSIS ROUND (5 iterations):
-   [Rest of the standard prompt structure]
+### 2. Analysis Rounds (2-3 iterations)
+For each round:
 
-3. FINAL SOLUTION:
-   [Rest of the standard prompt structure]
+#### a) Critical Analysis
+- Strengths: What works well (2-3 key points)
+- Weaknesses: Edge cases and limitations (2-3 key points)
+- Potential optimizations (1-2 specific improvements)
+
+#### b) Solution Refinement
+- Implement key changes that address the most critical weaknesses
+- Focus only on substantial improvements
+- Note briefly what changed and why
+
+### 3. Last Solution
+Provide your optimized solution with:
+- A brief summary of major improvements (2-3 sentences)
+- Any remaining considerations
 ```
 
 **Expected Outcome:**

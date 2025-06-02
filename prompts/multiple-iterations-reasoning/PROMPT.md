@@ -8,27 +8,26 @@ I want you to solve the following problem/task: [DESCRIBE PROBLEM OR TASK HERE]
 ## Iterative Solution Process
 
 ### 1. Initial Solution
-First, provide an initial solution to the problem. Focus on understanding the core requirements and creating a working approach.
+Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-### 2. Analysis Rounds (3-5 iterations)
-For each round (starting with round 1):
+### 2. Analysis Rounds (3 iterations)
+For each round:
 
 #### a) Critical Analysis
-- Strengths and what aspects work well
-- Weaknesses, edge cases, and limitations
-- Potential optimizations or improvements
-- Assumptions made and their validity
+- Strengths: What works well (2-3 key points)
+- Weaknesses: Edge cases and limitations (2-3 key points)
+- Potential optimizations (1-2 specific improvements)
 
 #### b) Solution Refinement
-- Address the identified weaknesses
-- Implement the optimizations
-- Consider alternative approaches if needed
-- Explicitly note what changes you're making and why
+- Implement key changes that address the most critical weaknesses
+- Focus only on substantial improvements
+- Note briefly what changed and why
 
-### 3. Final Solution
-After completing the iterative rounds, provide your final, optimized solution with:
-- A summary of how it evolved through the iterations
-- Key improvements made at each stage
-- Any remaining limitations or considerations
+### 3. Last Solution
+Provide your optimized solution with:
+- A brief summary of major improvements (2-3 sentences)
+- Any remaining considerations
 
-Please label each section clearly (e.g., "INITIAL SOLUTION", "ROUND 1 ANALYSIS", "ROUND 1 REFINEMENT", etc.) to track the evolution of your thinking and solution.
+Label each section clearly (e.g., "INITIAL SOLUTION", "ROUND 1", etc.).
+
+Note: Keep all explanations concise. For code examples, show only the most relevant parts and use comments to indicate omitted sections.
