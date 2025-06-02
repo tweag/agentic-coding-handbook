@@ -190,5 +190,4 @@ Limit each solution to under 50 lines of code, forcing increasingly elegant solu
 
 ## References
 
-- [Iterative Refinement in LLM Prompting](https://arxiv.org/abs/2303.08774)
-- [Self-Critique and Improvement in LLMs](https://www.anthropic.com/research)
+- [Multiple Iterations Reasoning Prompt Pattern](https://www.loom.com/share/10ecca1aa5a54eaf95669f2fe16cd56f?sid=1607557b-5d22-4d49-935e-933bdde55442)
