@@ -6,13 +6,13 @@ This prompt template encourages AI systems to solve problems through a structure
 ## How It Works
 The prompt follows a three-stage process:
 1. **Initial Solution**: The AI creates a concise first-draft solution focused on core requirements.
-2. **Analysis Rounds** (2-3 iterations): The AI critically evaluates its own work and makes targeted improvements in each round.
+2. **Analysis Rounds** (3 iterations): The AI critically evaluates its own work and makes targeted improvements in each round.
 3. **Last Solution**: The AI delivers an optimized solution with a brief summary of major improvements.
 
 ## Customization Options
 
 ### Adjusting Iteration Depth
-- You can specify exactly how many iterations you want (default is 2-3 iterations)
+- You can specify exactly how many iterations you want (default is 3 iterations)
 - For simpler problems, 2 iterations may be sufficient
 - For complex problems, 3 or more iterations allow for deeper refinement
 

@@ -16,7 +16,7 @@ I want you to solve the following problem/task: [DESCRIBE PROBLEM OR TASK HERE]
 ### 1. Initial Solution
 Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-### 2. Analysis Rounds (2-3 iterations)
+### 2. Analysis Rounds (3 iterations)
 For each round:
 
 #### a) Critical Analysis
@@ -59,7 +59,7 @@ I want you to solve the following problem: Design an algorithm to find a target 
 ### 1. Initial Solution
 Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-### 2. Analysis Rounds (2-3 iterations)
+### 2. Analysis Rounds (3 iterations)
 For each round:
 
 #### a) Critical Analysis
@@ -98,7 +98,7 @@ I want you to solve the following problem: Design a caching strategy for a web a
 ### 1. Initial Solution
 Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-### 2. Analysis Rounds (2-3 iterations)
+### 2. Analysis Rounds (3 iterations)
 For each round:
 
 #### a) Critical Analysis
@@ -137,7 +137,7 @@ I want you to solve the following problem: Design a standardized error handling 
 ### 1. Initial Solution
 Provide a concise initial solution to the problem. Focus on core requirements and a working approach. Keep code examples minimal.
 
-### 2. Analysis Rounds (2-3 iterations)
+### 2. Analysis Rounds (3 iterations)
 For each round:
 
 #### a) Critical Analysis
