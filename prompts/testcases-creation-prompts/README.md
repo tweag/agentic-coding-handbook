@@ -1,6 +1,6 @@
 # Testcase Coverage & Edge Cases Prompt - Usage Guide
 
-This guide explains how to use the provided QA prompt to maximize your project's test coverage, especially for negative and edge scenarios.
+This guide explains how to use the provided QA prompt to maximize your project's test coverage, especially for negative and edge cases.
 
 ---
 
@@ -42,7 +42,7 @@ This guide explains how to use the provided QA prompt to maximize your project's
 ## Benefits
 
 - **Improved Coverage:**  
-  Ensures all negative, edge, and non-ideal scenarios are tested.
+  Ensures all negative, edge cases, and non-ideal scenarios are tested.
 - **Reduced Risk:**  
   Helps catch bugs that might otherwise go unnoticed.
 - **Clear Documentation:**  
