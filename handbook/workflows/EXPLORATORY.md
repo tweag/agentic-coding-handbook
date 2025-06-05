@@ -54,3 +54,7 @@ Once the solution is complete:
 - Supports safer, modular implementations
 - Boosts onboarding speed for unfamiliar codebases
 - Encourages discipline without blocking creativity
+
+## References
+
+- [Refactoring Code with AI Assistance](https://www.loom.com/share/bc30c068b8c54038aaa02697ea69a9bd?sid=9ba2d4db-239a-4017-838d-c3195e67fc38)
