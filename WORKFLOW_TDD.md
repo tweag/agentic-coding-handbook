@@ -1,10 +1,10 @@
 # Test Driven Development
 
-Test-Driven Development (TDD) and Vibe Coding may seem like opposites — one is structured and disciplined, the other fluid and intuitive. But when paired, they create a powerful feedback loop: TDD gives structure to your flow, and vibe coding gives speed to your structure.
+Test-Driven Development (TDD) and Agentic Coding may seem like opposites — one is structured and disciplined, the other fluid and intuitive. But when paired, they create a powerful feedback loop: TDD gives structure to your flow, and Agentic coding gives speed to your structure.
 
 This combination shines when you’re working with complex logic files, such as pricing engines, rules-based validators, or multi-condition workflows. Instead of prompting the AI to generate everything at once, you describe one behavior at a time through tests — and let the AI build up the logic incrementally, safely, and cleanly.
 
-## Why TDD Makes Vibe Coding Better
+## Why TDD Makes Agentic Coding Better
 
 - **Tests act as prompts:** In the AI-assisted workflow, a test becomes a natural language spec that guides the AI toward exactly the behavior you expect. Instead of saying "generate a function that filters valid emails," you say it('should return only valid emails from a mixed list') and the AI writes the code to pass that test.
 
@@ -17,7 +17,7 @@ TDD keeps the LLM focused on small, testable goals instead of bloated implementa
 
 - **It reinforces clean, behavioral thinking:** TDD forces you to describe what the code should do, not how to write it. That’s exactly how we should prompt LLMs.
 
-## TDD Tips for Vibe Coders
+## TDD Tips for Agentic Coders
 
 - Start with high-value behavior first, not edge cases.
 - Use descriptive test names — the clearer the test, the better the AI result.

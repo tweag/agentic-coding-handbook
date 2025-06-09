@@ -1,17 +1,17 @@
-# Debugging Workflow for Vibe Coding
+# Debugging Workflow for Agentic Coding
 
-Debugging in a vibe coding workflow is not about blindly fixing bugs — it’s about building a feedback loop where AI helps identify, explain, and resolve issues systematically.
+Debugging in a Agentic coding workflow is not about blindly fixing bugs — it’s about building a feedback loop where AI helps identify, explain, and resolve issues systematically.
 
 This page outlines the core techniques to debug efficiently with AI agents, using tools like Cursor, Claude, and Model Context Providers (MCPs), while maintaining speed, quality, and confidence.
 
-## Principles Behind Vibe Debugging
+## Principles Behind Agentic Debugging
 
 - AI can think, but it needs context — error messages, logs, screenshots, and expectations.
 - Debugging isn’t a guessing game — it’s a structured narrowing of possible causes.
 - Reason before fixing — the best bugfixes come after deliberate analysis.
 - Debugging is also about prevention — adding logs, tests, and checkpoints helps catch bugs before they escalate.
 
-## Vibe Debugging Workflow
+## Agentic Debugging Workflow
 
 ### Let AI iterate over its own fix and testing loop
 
@@ -116,7 +116,7 @@ Explain what’s broken and how to fix it, but do not modify any files yet.
 | Two-Stage Debugging         | Reduces rework and scope creep      |
 | Checkpoints & Resets        | Keeps dev environment clean         |
 
-Debugging is where most engineers waste time. With structured prompting, context injection, and thoughtful reasoning, vibe debugging becomes a superpower — not a struggle.
+Debugging is where most engineers waste time. With structured prompting, context injection, and thoughtful reasoning, agentic debugging becomes a superpower — not a struggle.
 
 ## References
 

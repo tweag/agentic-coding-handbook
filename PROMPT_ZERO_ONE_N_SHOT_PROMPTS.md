@@ -1,6 +1,6 @@
 # Zero-Shot, One-Shot, and Multi-Shot Prompts
 
-Prompting is the language of AI. In vibe coding, how you structure your prompts determines not just the quality of the code — but whether the model understands your intent at all.
+Prompting is the language of AI. In agentic coding, how you structure your prompts determines not just the quality of the code — but whether the model understands your intent at all.
 
 This page breaks down three foundational prompting methods — Zero-Shot, One-Shot, and Multi-Shot — and demonstrates how to apply them strategically, using real-world engineering use cases with practical, reusable prompt examples.
 

@@ -1,13 +1,13 @@
 # Contributing
 
-This handbook is a living document. It reflects what we’ve learned so far about Vibe Coding at enterprise scale — but it’s not finished, and it never will be. We expect it to grow, evolve, and adapt as our team experiments, learns, and discovers better ways to collaborate with AI.
+This handbook is a living document. It reflects what we’ve learned so far about coding with agents — but it’s not finished, and it never will be. We expect it to grow, evolve, and adapt as our team experiments, learns, and discovers better ways to collaborate with AI.
 
 ## Why Contributions Matter
 
 - **The handbook evolves with you:** Every week, people across teams are learning new tricks, testing new workflows, and improving results. When you find something that works, document it here.
 - **AI changes fast:** New models, features, and tools are launching constantly. What works today might be outdated in six months. Help us keep this handbook current.
 - **Your experiments help everyone:** If you test a new prompting pattern, context feeding strategy, or way of organizing specs — document it. Share the knowledge.
-- **Enterprise-scale Vibe Coding is still evolving:** We’re all figuring this out together. If you discover better ways to scale across squads or workflows, bring it here.
+- **Enterprise-scale Agentic Coding is still evolving:** We’re all figuring this out together. If you discover better ways to scale across squads or workflows, bring it here.
 
 ## Common Contribution Practices
 

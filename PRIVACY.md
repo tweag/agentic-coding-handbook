@@ -1,8 +1,8 @@
-# Privacy Considerations for Vibe Coding
+# Privacy Considerations for Agentic Coding
 
 As we adopt AI coding agents in our daily workflow, it's critical that we stay vigilant about data privacy and security. Tools like Cursor, GitHub Copilot Agent, Claude, and others introduce new capabilities — but also new risks if misused.
 
-This page outlines the non-negotiable privacy boundaries, best practices, and tooling recommendations that all developers must follow while using vibe coding techniques.
+This page outlines the non-negotiable privacy boundaries, best practices, and tooling recommendations that all developers must follow while using agentic coding techniques.
 
 ## What You Must Never Do
 
@@ -65,7 +65,7 @@ Prompt: “This log contains simulated user activity. Based on this structure, c
 - Reputational damage if client data is exposed through AI usage logs or vendor breaches.
 - Audit failure due to use of unvetted tools or unapproved data exposure in prompt flows.
 
-Treat every prompt like a commit: if it contains sensitive data, it's already too late: Stay intentional, stay secure — vibe coding is powerful, but privacy comes first.
+Treat every prompt like a commit: if it contains sensitive data, it's already too late: Stay intentional, stay secure — agentic coding is powerful, but privacy comes first.
 
 ## Keep Reading
 

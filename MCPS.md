@@ -21,11 +21,11 @@ By using MCPs, developers spend less time tab-switching between tools and more t
 
 - [Figma MCP Plugin (Talk to Figma)](https://www.figma.com/community/plugin/1485687494525374295/cursor-talk-to-figma-mcp-plugin)
 
-MCPs are a core enabler for efficient vibe coding at scale, helping the AI work with richer, more reliable information without needing constant manual intervention.
+MCPs are a core enabler for efficient agentic coding at scale, helping the AI work with richer, more reliable information without needing constant manual intervention.
 
 ## Safety & Security Guidelines for Using MCPs
 
-When integrating Model Context Providers (MCPs) into your vibe-coding workflow, security must be front-of-mind. Follow these guardrails to protect your codebase, data, and credentials:
+When integrating Model Context Providers (MCPs) into your agentic-coding workflow, security must be front-of-mind. Follow these guardrails to protect your codebase, data, and credentials:
 
 | **Best-Practice**                                  | **Why it matters**                                                             | **What to do**                                                                                                                                                       |
 |----------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

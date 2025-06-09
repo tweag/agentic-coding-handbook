@@ -2,7 +2,7 @@
 
 The Multiple Iterations Reasoning prompt is a structured approach designed to guide AI systems through progressive rounds of self-improvement. This method leverages iterative analysis and refinement to produce solutions that are more robust, optimized, and thoroughly considered.
 
-In vibe coding, this technique is particularly valuable when dealing with complex problems that benefit from layered analysis, such as algorithm development, system architecture design, or code optimization where the first solution is rarely the best one.
+In agentic coding, this technique is particularly valuable when dealing with complex problems that benefit from layered analysis, such as algorithm development, system architecture design, or code optimization where the first solution is rarely the best one.
 
 ## What's the Method?
 
@@ -164,7 +164,7 @@ Provide your optimized solution with:
 
 ## Summary: Why Use the Multiple Iterations Reasoning Pattern?
 
-| **Benefit**                                     | **Why It Helps in Vibe Coding**                       |
+| **Benefit**                                     | **Why It Helps in Agentic Coding**                    |
 |-------------------------------------------------|------------------------------------------------------|
 | Promotes depth over breadth                     | Forces solutions beyond the obvious first approach    |
 | Documents the evolution of thinking             | Creates transparency in the solution development      |

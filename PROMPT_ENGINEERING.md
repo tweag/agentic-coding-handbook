@@ -144,8 +144,10 @@ https://shumerprompt.com/prompts/o3-maximum-reasoning-prompt-71b5828e-3c09-4df3-
 
 ## Go Deeper
 
-- [Three Experts Method](./prompting/THREE_EXPERTS_METHOD.md)
-- [Zero-Shot, One-Shot, and Multi-Shot Prompts](./prompting/ZERO_ONE_N_SHOT_PROMPTS.md)
+- [Three Experts Method](./PROMPT_THREE_EXPERTS_METHOD.md)
+- [Zero-Shot, One-Shot, and Multi-Shot Prompts](./PROMPT_ZERO_ONE_N_SHOT_PROMPTS.md)
+- [Multiple Iterations Reasoning Method](./PROMPT_MULTIPLE_ITERATIONS_REASONING.md)
+- [See more examples here](./examples-prompts/)
 
 ## Keep Reading
 

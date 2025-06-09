@@ -1,7 +1,7 @@
-# Vibe Coding Implementation Plan Generator
+# Agentic Coding Implementation Plan Generator
 
 ## Context
-I need your help creating a detailed implementation plan for a software feature or user story using a "vibe coding" approach. This involves leveraging AI to break down requirements into manageable, testable chunks that can be incrementally built and verified.
+I need your help creating a detailed implementation plan for a software feature or user story using a "Agentic coding" approach. This involves leveraging AI to break down requirements into manageable, testable chunks that can be incrementally built and verified.
 
 ## Step 1: Requirement Clarification
 First, help me refine and clarify the requirements through a focused conversation:

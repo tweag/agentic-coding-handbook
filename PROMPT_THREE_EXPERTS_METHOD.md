@@ -1,6 +1,6 @@
 # Three Experts Method
 
-The Three Experts prompt is a powerful reasoning pattern designed to help AI simulate deeper thinking and avoid shallow or generic responses. In vibe coding, it’s especially useful when you're working through complex architectural decisions, refactoring strategies, or debugging multi-layer issues.
+The Three Experts prompt is a powerful reasoning pattern designed to help AI simulate deeper thinking and avoid shallow or generic responses. In agentic coding, it’s especially useful when you're working through complex architectural decisions, refactoring strategies, or debugging multi-layer issues.
 
 This method turns the AI from a code generator into a panel of thought partners, each exploring the problem from a different angle — and converging on the most reasoned solution.
 
@@ -91,7 +91,7 @@ Stop once consensus is reached.
 
 ## Summary: Why Use the Three Experts Pattern?
 
-| **Benefit**                                       | **Why It Helps in Vibe Coding**                 |
+| **Benefit**                                       | **Why It Helps in Agentic Coding**              |
 |---------------------------------------------------|-------------------------------------------------|
 | Deepens reasoning                                 | Prevents superficial or default answers         |
 | Simulates tradeoffs                               | Mirrors real-world team decision dynamics       |
