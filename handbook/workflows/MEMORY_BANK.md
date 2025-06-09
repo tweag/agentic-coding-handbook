@@ -102,5 +102,5 @@ Refer to the following memory files for deeper project understanding:
 ```
 
 ## References
-
+- [How to Use a Memory Bank in Copilot](https://www.loom.com/share/152cea77575148b8af9fe8538ed30c30?sid=e3dd85c5-60e4-4d54-973c-4d4a3ff89917)
 - [10x your Cursor Workflow with Memory Bank](https://www.youtube.com/watch?si=EiHdLnUQMBanl_eO&v=Uufa6flWid4&feature=youtu.be&themeRefresh=1)
