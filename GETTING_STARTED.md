@@ -4,7 +4,7 @@ To work effectively with AI coding agents at Modus Create, your first step is se
 
 - **Install Visual Studio Code**: If you’re not already using VS Code you Download and install it here [Visual Studio Code Setup Guide](https://code.visualstudio.com/docs/setup/setup-overview);
 
-- **Request Your GitHub Copilot Subscription**: Modus provides GitHub Copilot licenses for all engineers. Before setting up Copilot, you must request your subscription by requesting at [Modus IT Service Desk Portal](https://moduscreate.atlassian.net/servicedesk/customer/portals);
+- **Request Your GitHub Copilot Subscription**: Modus provides GitHub Copilot licenses for all engineers. Before setting up Copilot, you must request your subscription by requesting at Modus IT Service Desk Portal;
 
 - **Install GitHub Copilot Extension**: Install the GitHub Copilot extension by following the guide at [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/setup);
 
