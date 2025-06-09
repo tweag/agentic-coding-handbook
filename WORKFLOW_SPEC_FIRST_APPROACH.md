@@ -19,7 +19,4 @@ But here’s the key: you don’t write the spec manually. You generate it by pr
 
 **Use a Reasoning Model:** Pick a model or enable reasoning in models like Claude Sonnet 3.7, GPT o* or Gemini 2.5 Pro. These models excel at multi-step thinking and structured dialogue, which is ideal for generating specs. Gemini 2.5 Pro has a larger context window, which will help to write a better plan over a larger codebase.
 
-**Create the files plan.md and todo.md:** Creating plan.md and todo.md ensures that AI coding agents work from a clear, structured understanding of the project. plan.md captures the full implementation blueprint, while todo.md breaks it into small, promptable tasks, enabling safer, more accurate code generation, better validation checkpoints, and faster, more reliable development cycles. 
-
-
-## TODO add link to github to the implementation plan prompt here
+**Create the files plan.md and todo.md:** Creating plan.md and todo.md ensures that AI coding agents work from a clear, structured understanding of the project. plan.md captures the full implementation blueprint, while todo.md breaks it into small, promptable tasks, enabling safer, more accurate code generation, better validation checkpoints, and faster, more reliable development cycles.

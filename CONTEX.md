@@ -30,7 +30,7 @@ A critical part of working with coding agents is feeding the right information, 
 
 - **Prefer tools that expose context:** Choose coding tools (like Cursor or Claude) that let you see the context window, not hide it. Visibility helps you debug, learn, and iterate faster.
 
-- **Creating and Maintaing Project Documents:** The team can maintain as part of the codebase (such as instructions) or in external systems acessbible by MCPs (such as Confluence) documents that can feed the context with core information on the project. One example is a [UI/UX guidelines](./documents/UI_UX_GUIDELINES.md) that aim to define patterns AI must follow to build user interfaces. Other examples can be a solution design handover document crafted by Modus Solution Design team, or a software architecture documentation.
+- **Creating and Maintaing Project Documents:** The team can maintain as part of the codebase (such as instructions) or in external systems acessbible by MCPs (such as Confluence) documents that can feed the context with core information on the project. One example is a [UI/UX guidelines](./exmaples-documents/UI_UX_GUIDELINES.md) that aim to define patterns AI must follow to build user interfaces. Other examples can be a solution design handover document crafted by Modus Solution Design team, or a software architecture documentation.
 
 ## References
 
