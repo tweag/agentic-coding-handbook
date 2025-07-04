@@ -1,0 +1,11 @@
+title: Agentic Coding Handbook
+remote_theme: just-the-docs/just-the-docs
+markdown: kramdown
+permalink: pretty
+# Optional: customize sidebar and search behavior
+# just_the_docs:
+#   logo: "images/logo.png"
+#   search_enabled: true
+#   aux_links:
+#     "View on GitHub":
+#       - "https://github.com/tweag/agentic-coding-handbook"
