@@ -6,13 +6,8 @@ nav_order: 1
 
 # Agentic Coding Handbook
 
-Welcome to the Agentic Coding Handbook — a living document capturing best practices and guidance for building agents.
-
-## 📚 Contents
+Welcome! This is the main page of the handbook.
 
 - [Guidelines](guidelines/)
 - [Reference](reference/)
 - [Agentic Primitives](agentic-primitives.md)
-- [FAQ](faq.md)
-- [Glossary](glossary.md)
-- [README](README.md)
