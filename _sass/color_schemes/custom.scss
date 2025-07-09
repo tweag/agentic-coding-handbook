@@ -105,10 +105,10 @@ $border-radius: 4px;
 $border-color: $grey-lt-100;
 
 //
-// Grid system
+// Grid system - Fixed to use consistent units
 //
-$gutter-spacing: $sp-6;
-$gutter-spacing-sm: $sp-4;
+$gutter-spacing: 32px;        // $sp-6 equivalent in px
+$gutter-spacing-sm: 16px;     // $sp-4 equivalent in px
 $nav-width: 264px;
 $nav-width-md: 248px;
 $content-width: 800px;
@@ -116,7 +116,7 @@ $header-height: 60px;
 $search-results-width: 500px;
 
 //
-// Media queries in pixels
+// Media queries in pixels - All consistent now
 //
 $media-queries: (
   xs: 320px,
