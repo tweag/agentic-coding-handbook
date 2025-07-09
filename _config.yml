@@ -23,8 +23,3 @@ search:
   tokenizer_separator: /[\s/]+/
   rel_url: true
   button: false
-
-# Aux links
-aux_links:
-  "Edit on GitHub":
-    - "https://github.com/tweag/agentic-coding-handbook"
