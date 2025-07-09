@@ -1,7 +1,3 @@
-//
-// Custom color scheme - only colors to avoid unit conflicts
-//
-
 // Colors
 $white: #fff;
 
@@ -15,11 +11,6 @@ $grey-lt-000: #f5f6fa;
 $grey-lt-100: #eeebee;
 $grey-lt-200: #eceae2;
 $grey-lt-300: #e6e1e8;
-
-$purple-000: #7253ed;
-$purple-100: #5e41d0;
-$purple-200: #4e26af;
-$purple-300: #381885;
 
 $blue-000: #2c84fa;
 $blue-100: #2869e6;
@@ -57,6 +48,6 @@ $body-text-color: $grey-dk-100;
 $body-heading-color: $grey-dk-300;
 $search-result-preview-color: $grey-dk-000;
 $nav-child-link-color: $grey-dk-100;
-$link-color: $purple-000;
-$btn-primary-color: $purple-100;
+$link-color: $grey-dk-300;
+$btn-primary-color: $grey-dk-300;
 $base-button-color: #f7f7f7;
