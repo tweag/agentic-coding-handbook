@@ -102,18 +102,6 @@
           box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
         }
       }
-      
-      // Search icon
-      &::before {
-        content: "🔍";
-        position: absolute;
-        left: 12px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 16px;
-        opacity: 0.6;
-        z-index: 10;
-      }
     }
   }
   
@@ -231,5 +219,64 @@
     .main-content-wrap {
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+  }
+
+  // Scrollbar styling for dark theme
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #111111; // Black background for scrollbar track
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #404040; // Dark grey for the scrollbar handle
+    border-radius: 6px;
+    border: 2px solid #111111; // Border to create some spacing
+    
+    &:hover {
+      background: #666666; // Lighter grey on hover
+    }
+    
+    &:active {
+      background: #808080; // Even lighter when active/dragging
+    }
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #111111; // Black corner where scrollbars meet
+  }
+  
+  // For Firefox
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #111111; // thumb color, track color
+  }
+  
+  // Specifically for the sidebar scrollbar
+  .side-bar {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #1a1a1a;
+    
+    &::-webkit-scrollbar {
+      width: 8px; // Thinner scrollbar for sidebar
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #1a1a1a; // Match sidebar background
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #404040;
+      border-radius: 4px;
+      border: 1px solid #1a1a1a;
+      
+      &:hover {
+        background: #666666;
+      }
     }
   }
