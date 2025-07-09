@@ -1,17 +1,10 @@
 // OpenAI Platform-inspired customizations
-// Fixed sidebar visibility and layout
+// Preserving just-the-docs mobile functionality
 
 // Enhanced sidebar styling (OpenAI-like)
 .side-bar {
     background-color: #1a1a1a !important;
     border-right: 1px solid #404040;
-    width: 280px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 100;
     
     // Site title styling
     .site-title {
@@ -30,22 +23,27 @@
     }
   }
   
-  // Adjust main content to account for sidebar
-  .main {
-    margin-left: 280px !important;
-    max-width: none !important;
+  // Adjust main content for desktop only
+  @media (min-width: 769px) {
+    .main {
+      margin-left: 280px !important;
+    }
+    
+    .side-bar {
+      width: 280px;
+      padding: 1.5rem 0;
+    }
   }
   
+  // Main content styling
   .main-content-wrap {
     max-width: none !important;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-left: 0 !important;
   }
   
   .main-content {
     max-width: none !important;
-    margin-left: 0 !important;
     text-align: left;
     background-color: #111111 !important;
     color: #b3b3b3 !important;
@@ -81,7 +79,6 @@
     
     .search-input-wrap {
       position: relative;
-      margin-top: 1rem;
       
       .search-input {
         background-color: #2d2d2d !important;
@@ -91,7 +88,7 @@
         padding: 12px 16px 12px 40px;
         font-size: 14px;
         width: 100%;
-
+        
         &::placeholder {
           color: #808080 !important;
         }
@@ -102,7 +99,7 @@
           box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
         }
       }
-
+      
       .search-label {
         padding-left: 1rem;
       }
@@ -151,18 +148,20 @@
     }
   }
   
-  // Section headers in navigation
-  .nav-category {
-    color: #ffffff;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 1.5rem 1rem 0.5rem 1rem;
-    margin-top: 1rem;
+  // Mobile menu button styling (preserve original functionality)
+  .site-nav,
+  .site-header {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #404040;
+  }
+  
+  .site-button {
+    background: #10a37f !important;
+    color: #ffffff !important;
+    border: none !important;
     
-    &:first-child {
-      margin-top: 0;
+    &:hover {
+      background: #0d8f72 !important;
     }
   }
   
@@ -203,75 +202,50 @@
     }
   }
   
-  // Header styling (if exists)
-  .site-header {
-    display: none; // Hide header to get more space
-  }
-  
-  // Responsive adjustments
-  @media (max-width: 768px) {
-    .side-bar {
-      width: 100%;
-      position: relative;
-      height: auto;
-    }
-    
-    .main {
-      margin-left: 0 !important;
-    }
-    
-    .main-content-wrap {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
-
   // Scrollbar styling for dark theme
-::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
   }
   
   ::-webkit-scrollbar-track {
-    background: #111111; // Black background for scrollbar track
+    background: #111111;
     border-radius: 6px;
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #404040; // Dark grey for the scrollbar handle
+    background: #404040;
     border-radius: 6px;
-    border: 2px solid #111111; // Border to create some spacing
+    border: 2px solid #111111;
     
     &:hover {
-      background: #666666; // Lighter grey on hover
+      background: #666666;
     }
     
     &:active {
-      background: #808080; // Even lighter when active/dragging
+      background: #808080;
     }
   }
   
   ::-webkit-scrollbar-corner {
-    background: #111111; // Black corner where scrollbars meet
+    background: #111111;
   }
   
-  // For Firefox
   html {
     scrollbar-width: thin;
-    scrollbar-color: #404040 #111111; // thumb color, track color
+    scrollbar-color: #404040 #111111;
   }
   
-  // Specifically for the sidebar scrollbar
   .side-bar {
     scrollbar-width: thin;
     scrollbar-color: #404040 #1a1a1a;
     
     &::-webkit-scrollbar {
-      width: 8px; // Thinner scrollbar for sidebar
+      width: 8px;
     }
     
     &::-webkit-scrollbar-track {
-      background: #1a1a1a; // Match sidebar background
+      background: #1a1a1a;
     }
     
     &::-webkit-scrollbar-thumb {
@@ -282,5 +256,13 @@
       &:hover {
         background: #666666;
       }
+    }
+  }
+  
+  // Mobile adjustments - preserve original behavior
+  @media (max-width: 768px) {
+    .main-content-wrap {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
