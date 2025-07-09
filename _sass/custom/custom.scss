@@ -1,67 +1,204 @@
-// Page metadata styling (like Confluence)
-.page-metadata {
-    background: #f8f9fa;
-    border-radius: 6px;
-    padding: 16px;
-    margin: 20px 0;
-    border-left: 4px solid $purple-000;
+// OpenAI Platform-inspired customizations
+
+// Full-width layout
+.site-wrap {
+    max-width: none !important;
+  }
+  
+  .main {
+    max-width: none !important;
+    margin-left: 0 !important;
+  }
+  
+  .main-content-wrap {
+    max-width: none !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .main-content {
+    max-width: none !important;
+    margin-left: 0 !important;
+    text-align: left;
+  }
+  
+  // Enhanced sidebar styling (OpenAI-like)
+  .side-bar {
+    background-color: $dark-grey-800;
+    border-right: 1px solid $dark-grey-600;
+    width: 280px;
+    padding: 1.5rem 0;
     
-    .meta-row {
-      display: flex;
-      align-items: center;
-      margin-bottom: 8px;
-      font-size: 14px;
-      color: $grey-dk-000;
-      
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-    
-    .meta-label {
+    // Site title styling
+    .site-title {
+      color: #ffffff;
+      font-size: 1.25rem;
       font-weight: 600;
-      margin-right: 8px;
-    }
-    
-    .meta-avatars {
-      display: flex;
-      margin-left: 8px;
+      padding: 0 1.5rem 2rem 1.5rem;
+      border-bottom: 1px solid $dark-grey-600;
+      margin-bottom: 1.5rem;
       
-      img {
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        margin-right: 4px;
-        border: 2px solid white;
+      &:hover {
+        color: #ffffff;
+        text-decoration: none;
       }
     }
   }
   
-  // Alert boxes (like the yellow warning)
+  // Search styling
+  .search {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    
+    .search-input-wrap {
+      position: relative;
+      
+      .search-input {
+        background-color: $dark-grey-700;
+        border: 1px solid $dark-grey-600;
+        border-radius: 8px;
+        color: $dark-grey-200;
+        padding: 12px 16px 12px 40px;
+        font-size: 14px;
+        width: 100%;
+        
+        &::placeholder {
+          color: $dark-grey-400;
+        }
+        
+        &:focus {
+          border-color: $accent-blue;
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
+        }
+      }
+      
+      // Search icon
+      &::before {
+        content: "🔍";
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        opacity: 0.6;
+      }
+    }
+  }
+  
+  // Navigation styling
+  .navigation-list {
+    padding: 0 1rem;
+    
+    .navigation-list-child-list {
+      padding-left: 0;
+    }
+    
+    .navigation-list-item {
+      margin: 0;
+      
+      .navigation-list-link {
+        color: $dark-grey-300;
+        padding: 8px 1rem;
+        border-radius: 6px;
+        margin: 2px 0;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.2s ease;
+        
+        &:hover {
+          background-color: $dark-grey-700;
+          color: #ffffff;
+          text-decoration: none;
+        }
+        
+        &.active {
+          background-color: $accent-blue;
+          color: #ffffff;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  
+  // Section headers in navigation
+  .nav-category {
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  
+  // Main content styling
+  .main-content {
+    background-color: $dark-grey-900;
+    color: $dark-grey-200;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff;
+      font-weight: 600;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    a {
+      color: $accent-blue;
+      
+      &:hover {
+        color: $accent-blue-hover;
+      }
+    }
+  }
+  
+  // Code blocks
+  pre, code {
+    background-color: $dark-grey-700 !important;
+    color: $dark-grey-100 !important;
+    border: 1px solid $dark-grey-600 !important;
+  }
+  
+  // Alert boxes for dark theme
   .alert {
+    border-radius: 8px;
     padding: 16px;
     margin: 20px 0;
-    border-radius: 6px;
     border-left: 4px solid;
     
     &.alert-warning {
-      background-color: #fff3cd;
-      border-left-color: $yellow-200;
-      color: #856404;
+      background-color: rgba(255, 193, 7, 0.1);
+      border-left-color: #ffc107;
+      color: #ffc107;
     }
     
     &.alert-info {
-      background-color: #d1ecf1;
-      border-left-color: $blue-200;
-      color: #0c5460;
+      background-color: rgba(16, 163, 127, 0.1);
+      border-left-color: $accent-blue;
+      color: $accent-blue;
     }
   }
   
-  // Enhanced main content styling
-  .main-content {
-    .page-header {
-      border-bottom: 1px solid $border-color;
-      padding-bottom: 16px;
-      margin-bottom: 24px;
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .side-bar {
+      width: 100%;
+    }
+    
+    .main-content-wrap {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
