@@ -1,47 +1,77 @@
 // OpenAI Platform-inspired customizations
-// Using hardcoded colors to avoid variable dependency issues
+// Fixed sidebar visibility and layout
 
-// Full-width layout
-.site-wrap {
-    max-width: none !important;
+// Enhanced sidebar styling (OpenAI-like)
+.side-bar {
+    background-color: #1a1a1a !important;
+    border-right: 1px solid #404040;
+    width: 280px;
+    padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 100;
+    
+    // Site title styling
+    .site-title {
+      color: #ffffff !important;
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 0 1.5rem 2rem 1.5rem;
+      border-bottom: 1px solid #404040;
+      margin-bottom: 1.5rem;
+      display: block;
+      
+      &:hover {
+        color: #ffffff !important;
+        text-decoration: none;
+      }
+    }
   }
   
+  // Adjust main content to account for sidebar
   .main {
+    margin-left: 280px !important;
     max-width: none !important;
-    margin-left: 0 !important;
   }
   
   .main-content-wrap {
     max-width: none !important;
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-left: 0 !important;
   }
   
   .main-content {
     max-width: none !important;
     margin-left: 0 !important;
     text-align: left;
-  }
-  
-  // Enhanced sidebar styling (OpenAI-like)
-  .side-bar {
-    background-color: #1a1a1a;
-    border-right: 1px solid #404040;
-    width: 280px;
-    padding: 1.5rem 0;
+    background-color: #111111 !important;
+    color: #b3b3b3 !important;
+    min-height: 100vh;
     
-    // Site title styling
-    .site-title {
-      color: #ffffff;
-      font-size: 1.25rem;
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff !important;
       font-weight: 600;
-      padding: 0 1.5rem 2rem 1.5rem;
-      border-bottom: 1px solid #404040;
-      margin-bottom: 1.5rem;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    a {
+      color: #10a37f !important;
       
       &:hover {
-        color: #ffffff;
-        text-decoration: none;
+        color: #0d8f72 !important;
       }
     }
   }
@@ -54,20 +84,20 @@
       position: relative;
       
       .search-input {
-        background-color: #2d2d2d;
-        border: 1px solid #404040;
+        background-color: #2d2d2d !important;
+        border: 1px solid #404040 !important;
         border-radius: 8px;
-        color: #b3b3b3;
+        color: #b3b3b3 !important;
         padding: 12px 16px 12px 40px;
         font-size: 14px;
         width: 100%;
         
         &::placeholder {
-          color: #808080;
+          color: #808080 !important;
         }
         
         &:focus {
-          border-color: #10a37f;
+          border-color: #10a37f !important;
           outline: none;
           box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
         }
@@ -82,40 +112,48 @@
         transform: translateY(-50%);
         font-size: 16px;
         opacity: 0.6;
+        z-index: 10;
       }
     }
   }
   
   // Navigation styling
-  .navigation-list {
+  .nav-list {
     padding: 0 1rem;
     
-    .navigation-list-child-list {
-      padding-left: 0;
-    }
-    
-    .navigation-list-item {
+    .nav-list-item {
       margin: 0;
       
-      .navigation-list-link {
-        color: #999999;
+      .nav-list-link {
+        color: #999999 !important;
         padding: 8px 1rem;
         border-radius: 6px;
         margin: 2px 0;
         font-size: 14px;
         font-weight: 400;
         transition: all 0.2s ease;
+        display: block;
         
         &:hover {
-          background-color: #2d2d2d;
-          color: #ffffff;
+          background-color: #2d2d2d !important;
+          color: #ffffff !important;
           text-decoration: none;
         }
         
         &.active {
-          background-color: #10a37f;
-          color: #ffffff;
+          background-color: #10a37f !important;
+          color: #ffffff !important;
           font-weight: 500;
+        }
+      }
+      
+      // Child navigation
+      .nav-list {
+        padding-left: 1rem;
+        
+        .nav-list-link {
+          font-size: 13px;
+          padding: 6px 1rem;
         }
       }
     }
@@ -136,33 +174,14 @@
     }
   }
   
-  // Main content styling
-  .main-content {
-    background-color: #111111;
-    color: #b3b3b3;
-    
-    h1, h2, h3, h4, h5, h6 {
-      color: #ffffff;
-      font-weight: 600;
-    }
-    
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-    }
-    
-    a {
-      color: #10a37f;
-      
-      &:hover {
-        color: #0d8f72;
-      }
-    }
+  // Body and html styling
+  body {
+    background-color: #111111 !important;
+    color: #b3b3b3 !important;
+  }
+  
+  .site-wrap {
+    max-width: none !important;
   }
   
   // Code blocks
@@ -180,22 +199,33 @@
     border-left: 4px solid;
     
     &.alert-warning {
-      background-color: rgba(255, 193, 7, 0.1);
+      background-color: rgba(255, 193, 7, 0.1) !important;
       border-left-color: #ffc107;
-      color: #ffc107;
+      color: #ffc107 !important;
     }
     
     &.alert-info {
-      background-color: rgba(16, 163, 127, 0.1);
+      background-color: rgba(16, 163, 127, 0.1) !important;
       border-left-color: #10a37f;
-      color: #10a37f;
+      color: #10a37f !important;
     }
+  }
+  
+  // Header styling (if exists)
+  .site-header {
+    display: none; // Hide header to get more space
   }
   
   // Responsive adjustments
   @media (max-width: 768px) {
     .side-bar {
       width: 100%;
+      position: relative;
+      height: auto;
+    }
+    
+    .main {
+      margin-left: 0 !important;
     }
     
     .main-content-wrap {
