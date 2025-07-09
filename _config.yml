@@ -10,10 +10,6 @@ heading_anchors: true
 
 # Navigation
 nav_sort: case_insensitive
-nav_external_links:
-  - title: View on GitHub
-    url: https://github.com/tweag/agentic-coding-handbook
-    hide_icon: false
 
 # Footer
 footer_content: 'Copyright &copy; 2025 Agentic Coding Handbook. Distributed by an <a href="https://github.com/tweag/agentic-coding-handbook/tree/main/LICENSE">MIT license.</a>'
