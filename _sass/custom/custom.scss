@@ -12,9 +12,9 @@
       font-size: 1.25rem;
       font-weight: 600;
       padding: 0 1.5rem 2rem 1.5rem;
-      border-bottom: 1px solid #404040;
       margin-bottom: 1.5rem;
       display: block;
+      text-align: center;
       
       &:hover {
         color: #ffffff !important;
@@ -160,6 +160,10 @@
     background: #10a37f !important;
     color: #ffffff !important;
     border: none !important;
+
+    .icon {
+      color: #ffffff !important;
+    }
     
     &:hover {
       background: #0d8f72 !important;
