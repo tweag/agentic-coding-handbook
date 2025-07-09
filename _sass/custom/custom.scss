@@ -1,0 +1,67 @@
+// Page metadata styling (like Confluence)
+.page-metadata {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 20px 0;
+    border-left: 4px solid $purple-000;
+    
+    .meta-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+      color: $grey-dk-000;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    
+    .meta-label {
+      font-weight: 600;
+      margin-right: 8px;
+    }
+    
+    .meta-avatars {
+      display: flex;
+      margin-left: 8px;
+      
+      img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin-right: 4px;
+        border: 2px solid white;
+      }
+    }
+  }
+  
+  // Alert boxes (like the yellow warning)
+  .alert {
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 6px;
+    border-left: 4px solid;
+    
+    &.alert-warning {
+      background-color: #fff3cd;
+      border-left-color: $yellow-200;
+      color: #856404;
+    }
+    
+    &.alert-info {
+      background-color: #d1ecf1;
+      border-left-color: $blue-200;
+      color: #0c5460;
+    }
+  }
+  
+  // Enhanced main content styling
+  .main-content {
+    .page-header {
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+  }
