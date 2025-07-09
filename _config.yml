@@ -2,10 +2,33 @@ title: Agentic Coding Handbook
 remote_theme: just-the-docs/just-the-docs
 markdown: kramdown
 permalink: pretty
-# Optional: customize sidebar and search behavior
-just_the_docs:
-  logo: "images/logo.png"
-  search_enabled: true
-  aux_links:
-    "View on GitHub":
-      - "https://github.com/tweag/agentic-coding-handbook"
+
+# Color scheme and appearance
+color_scheme: custom
+search_enabled: true
+heading_anchors: true
+
+# Navigation
+nav_sort: case_insensitive
+nav_external_links:
+  - title: View on GitHub
+    url: https://github.com/tweag/agentic-coding-handbook
+    hide_icon: false
+
+# Footer
+footer_content: 'Copyright &copy; 2025 Agentic Coding Handbook. Distributed by an <a href="https://github.com/tweag/agentic-coding-handbook/tree/main/LICENSE">MIT license.</a>'
+
+# Search
+search:
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Aux links
+aux_links:
+  "Edit on GitHub":
+    - "https://github.com/tweag/agentic-coding-handbook"
