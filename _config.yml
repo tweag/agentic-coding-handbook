@@ -4,7 +4,7 @@ markdown: kramdown
 permalink: pretty
 
 # Color scheme and appearance
-color_scheme: custom
+color_scheme: dark
 search_enabled: true
 heading_anchors: true
 

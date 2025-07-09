@@ -1,0 +1,42 @@
+//
+// Dark theme inspired by OpenAI Platform
+//
+
+// Dark color palette
+$black: #000000;
+$dark-grey-900: #111111;
+$dark-grey-800: #1a1a1a;
+$dark-grey-700: #2d2d2d;
+$dark-grey-600: #404040;
+$dark-grey-500: #666666;
+$dark-grey-400: #808080;
+$dark-grey-300: #999999;
+$dark-grey-200: #b3b3b3;
+$dark-grey-100: #cccccc;
+
+$accent-blue: #10a37f;
+$accent-blue-hover: #0d8f72;
+
+// Background colors
+$body-background-color: $dark-grey-900;
+$sidebar-color: $dark-grey-800;
+$search-background-color: $dark-grey-700;
+$table-background-color: $dark-grey-800;
+$code-background-color: $dark-grey-700;
+$feedback-color: $dark-grey-700;
+
+// Border colors
+$border-color: $dark-grey-600;
+
+// Text colors
+$body-text-color: $dark-grey-200;
+$body-heading-color: #ffffff;
+$search-result-preview-color: $dark-grey-300;
+$nav-child-link-color: $dark-grey-300;
+$link-color: $accent-blue;
+$btn-primary-color: $accent-blue;
+$base-button-color: $dark-grey-700;
+
+// Navigation colors
+$nav-list-item-hover-color: $dark-grey-700;
+$nav-list-expander-color: $dark-grey-400;
