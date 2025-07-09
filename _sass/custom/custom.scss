@@ -92,10 +92,6 @@
         font-size: 14px;
         width: 100%;
 
-        .search-label {
-            padding-left: 0;
-        }
-        
         &::placeholder {
           color: #808080 !important;
         }
@@ -105,6 +101,10 @@
           outline: none;
           box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
         }
+      }
+
+      .search-label {
+        padding-left: 0;
       }
     }
   }
