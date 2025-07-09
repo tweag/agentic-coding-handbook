@@ -17,6 +17,45 @@ $dark-grey-100: #cccccc;
 $accent-blue: #10a37f;
 $accent-blue-hover: #0d8f72;
 
+// Just-the-docs required variables
+$white: #ffffff;
+
+$grey-dk-000: $dark-grey-300;
+$grey-dk-100: $dark-grey-200;
+$grey-dk-200: $dark-grey-100;
+$grey-dk-250: #e0e0e0;
+$grey-dk-300: #f0f0f0;
+
+$grey-lt-000: $dark-grey-700;
+$grey-lt-100: $dark-grey-600;
+$grey-lt-200: $dark-grey-500;
+$grey-lt-300: $dark-grey-400;
+
+$purple-000: $accent-blue;
+$purple-100: $accent-blue-hover;
+$purple-200: #0a7c63;
+$purple-300: #086b54;
+
+$blue-000: $accent-blue;
+$blue-100: $accent-blue-hover;
+$blue-200: #0a7c63;
+$blue-300: #086b54;
+
+$green-000: $accent-blue;
+$green-100: $accent-blue-hover;
+$green-200: #0a7c63;
+$green-300: #086b54;
+
+$yellow-000: #ffc107;
+$yellow-100: #e0a800;
+$yellow-200: #cc9600;
+$yellow-300: #b88500;
+
+$red-000: #ff6b6b;
+$red-100: #ff5252;
+$red-200: #f44336;
+$red-300: #d32f2f;
+
 // Background colors
 $body-background-color: $dark-grey-900;
 $sidebar-color: $dark-grey-800;
@@ -30,13 +69,9 @@ $border-color: $dark-grey-600;
 
 // Text colors
 $body-text-color: $dark-grey-200;
-$body-heading-color: #ffffff;
+$body-heading-color: $white;
 $search-result-preview-color: $dark-grey-300;
 $nav-child-link-color: $dark-grey-300;
 $link-color: $accent-blue;
 $btn-primary-color: $accent-blue;
 $base-button-color: $dark-grey-700;
-
-// Navigation colors
-$nav-list-item-hover-color: $dark-grey-700;
-$nav-list-expander-color: $dark-grey-400;

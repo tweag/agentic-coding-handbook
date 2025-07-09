@@ -1,4 +1,5 @@
 // OpenAI Platform-inspired customizations
+// Using hardcoded colors to avoid variable dependency issues
 
 // Full-width layout
 .site-wrap {
@@ -24,8 +25,8 @@
   
   // Enhanced sidebar styling (OpenAI-like)
   .side-bar {
-    background-color: $dark-grey-800;
-    border-right: 1px solid $dark-grey-600;
+    background-color: #1a1a1a;
+    border-right: 1px solid #404040;
     width: 280px;
     padding: 1.5rem 0;
     
@@ -35,7 +36,7 @@
       font-size: 1.25rem;
       font-weight: 600;
       padding: 0 1.5rem 2rem 1.5rem;
-      border-bottom: 1px solid $dark-grey-600;
+      border-bottom: 1px solid #404040;
       margin-bottom: 1.5rem;
       
       &:hover {
@@ -53,20 +54,20 @@
       position: relative;
       
       .search-input {
-        background-color: $dark-grey-700;
-        border: 1px solid $dark-grey-600;
+        background-color: #2d2d2d;
+        border: 1px solid #404040;
         border-radius: 8px;
-        color: $dark-grey-200;
+        color: #b3b3b3;
         padding: 12px 16px 12px 40px;
         font-size: 14px;
         width: 100%;
         
         &::placeholder {
-          color: $dark-grey-400;
+          color: #808080;
         }
         
         &:focus {
-          border-color: $accent-blue;
+          border-color: #10a37f;
           outline: none;
           box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
         }
@@ -97,7 +98,7 @@
       margin: 0;
       
       .navigation-list-link {
-        color: $dark-grey-300;
+        color: #999999;
         padding: 8px 1rem;
         border-radius: 6px;
         margin: 2px 0;
@@ -106,13 +107,13 @@
         transition: all 0.2s ease;
         
         &:hover {
-          background-color: $dark-grey-700;
+          background-color: #2d2d2d;
           color: #ffffff;
           text-decoration: none;
         }
         
         &.active {
-          background-color: $accent-blue;
+          background-color: #10a37f;
           color: #ffffff;
           font-weight: 500;
         }
@@ -137,8 +138,8 @@
   
   // Main content styling
   .main-content {
-    background-color: $dark-grey-900;
-    color: $dark-grey-200;
+    background-color: #111111;
+    color: #b3b3b3;
     
     h1, h2, h3, h4, h5, h6 {
       color: #ffffff;
@@ -156,19 +157,19 @@
     }
     
     a {
-      color: $accent-blue;
+      color: #10a37f;
       
       &:hover {
-        color: $accent-blue-hover;
+        color: #0d8f72;
       }
     }
   }
   
   // Code blocks
   pre, code {
-    background-color: $dark-grey-700 !important;
-    color: $dark-grey-100 !important;
-    border: 1px solid $dark-grey-600 !important;
+    background-color: #2d2d2d !important;
+    color: #cccccc !important;
+    border: 1px solid #404040 !important;
   }
   
   // Alert boxes for dark theme
@@ -186,8 +187,8 @@
     
     &.alert-info {
       background-color: rgba(16, 163, 127, 0.1);
-      border-left-color: $accent-blue;
-      color: $accent-blue;
+      border-left-color: #10a37f;
+      color: #10a37f;
     }
   }
   
