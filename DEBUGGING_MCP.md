@@ -39,7 +39,7 @@ Configuration in `.vscode/mcp.json`:
 
 ## Limitation and Challenge: Connecting to Existing Browser Sessions
 
-A significant limitation is the inability to easily connect to an already running browser instance where an error occurred. Instead the AI assistant uses the MCP to navigate to the running app based on the running app’s URL, which either reloads the browser window/tab or opens a new browser session.
+A significant limitation is the inability to easily connect to an already running browser instance where an error occurred. Instead the AI assistant uses the MCP to navigate to the running app based on the running app's URL, which either reloads the browser window/tab or opens a new browser session.
 
 This presents several challenges for real-world debugging:
 
@@ -48,3 +48,7 @@ This presents several challenges for real-world debugging:
 - **Context Loss:** When an error occurs in a user's browser, valuable context (console history, network requests, application state) is lost if it cannot be extracted directly from that session.
 
 - **Developer Experience:** The workflow becomes cumbersome as developers need to provide detailed instructions for reproducing the error in a separate MCP-controlled browser instance.
+
+## Keep Reading
+
+[Debugging Workflow](./WORKFLOW_DEBUG.md)

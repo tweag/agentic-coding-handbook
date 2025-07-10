@@ -17,3 +17,7 @@ Please create a page under this page and share your experiences from applying th
 - What are the major interesting things you learned?
 - Share any rules, instructions, scripts, MCPs or other tools you have approached?
 - Please make sure to share screenshots and looms to ease the understanding.
+
+## Keep Reading
+
+[Core Workflows](./core-workflows.md)

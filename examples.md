@@ -54,3 +54,7 @@ Each example includes:
 - **Results** - What to expect from the output
 
 Start with the examples that match your current challenges, then explore related patterns as you build confidence with agentic coding workflows.
+
+## Keep Reading
+
+Share your own experiences and help grow our knowledge base: [Team Experiences](./TEAM_EXPERIENCES.md)

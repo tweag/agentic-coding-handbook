@@ -164,3 +164,7 @@ Output:
 ## References
 
 - [TDD with Github Copilot Agent](https://www.loom.com/share/d442996affe14bdea81014183f633988)
+
+## Keep Reading
+
+[Automatic Code Validations](./WORKFLOW_AUTO_VALIDATIONS.md)

@@ -201,3 +201,7 @@ Limit each solution to under 50 lines of code, forcing increasingly elegant solu
 ## References
 
 - [Multiple Iterations Reasoning Prompt Pattern](https://www.loom.com/share/10ecca1aa5a54eaf95669f2fe16cd56f?sid=1607557b-5d22-4d49-935e-933bdde55442)
+
+## Keep Reading
+
+[Zero-Shot, One-Shot, and Multi-Shot Prompts](./PROMPT_ZERO_ONE_N_SHOT_PROMPTS.md)

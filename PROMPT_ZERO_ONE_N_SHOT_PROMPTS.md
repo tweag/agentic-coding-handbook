@@ -85,3 +85,7 @@ Now write a controller method for POST /users/invite.
 ```
 
 Benefit: Enables the AI to model based on pattern, not just one instance. Useful for generating a series of aligned endpoints.
+
+## Keep Reading
+
+[Core Workflows](./core-workflows.md)

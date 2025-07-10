@@ -118,3 +118,7 @@ Each shares their perspective, step-by-step, to align on a final implementation 
 ## References
 
 - [Leveraging AI with the Three Experts Technique](https://www.loom.com/share/50de91feb2ca4abdbca0521d8049d81d)
+
+## Keep Reading
+
+[Multiple Iterations Reasoning Method](./PROMPT_MULTIPLE_ITERATIONS_REASONING.md)

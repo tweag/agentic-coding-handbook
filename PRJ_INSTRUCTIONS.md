@@ -148,4 +148,4 @@ Use modern technologies as described below for all code suggestions. Prioritize 
 
 ## Keep Reading
 
-[Models Use Cases](./MODELS_USE_CASES.md)
+[Examples](./examples.md)

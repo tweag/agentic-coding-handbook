@@ -87,3 +87,7 @@ Given the failed API call shown in network logs, what’s likely missing in the 
 ## References
 
 - [Using Copilot with Visual Feedback](https://www.loom.com/share/a811bd60a39e4bd38073637e24101af8?sid=f3e88fab-2768-44bb-8b66-970229dbaee6)
+
+## Keep Reading
+
+[Debugging Workflow](./WORKFLOW_DEBUG.md)

@@ -56,3 +56,7 @@ This ensures that no invalid code ever gets committed, keeping your repo clean a
 ## References
 
 - [Enhancing Code Quality with AI](https://www.loom.com/share/32bd23d355d9438587d55d7a87b58ed1)
+
+## Keep Reading
+
+[Exploratory & Refactoring Workflow](./WORKFLOW_EXPLORATORY.md)

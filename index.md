@@ -42,6 +42,10 @@ Configure your development environment for maximum effectiveness.
 
 Ready-to-use prompts, scripts, and documentation templates.
 
+## Keep Reading
+
+Start your agentic coding journey with our comprehensive guide: [Getting Started](./getting-started.md)
+
 ---
 
 _Use the navigation sidebar to explore each section. Every page includes practical examples, common pitfalls, and step-by-step guidance to help you succeed with agentic coding._
