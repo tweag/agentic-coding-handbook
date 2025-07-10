@@ -1,6 +1,13 @@
+---
+layout: default
+title: Exploratory Workflow
+parent: Core Workflows
+nav_order: 5
+---
+
 # Exploratory & Refactoring Workflow
 
-> ***Explore → Plan → Code → Commit***
+> **_Explore → Plan → Code → Commit_**
 
 AI tools like Claude, Cursor, and GitHub Copilot are not just code generators — they are reasoning engines. When used intentionally, they can help engineers dissect complex problems, map systems, and implement safe, scalable solutions. This workflow focuses on using AI for exploration and strategy before coding begins.
 
@@ -42,9 +49,9 @@ With a plan in place, start coding:
 Once the solution is complete:
 
 - Ask the AI to summarize changes:
-"Generate a changelog summary and commit message based on the last 3 modified files."
+  "Generate a changelog summary and commit message based on the last 3 modified files."
 - Auto-update documentation:
-"Update the README and Swagger docs to reflect changes to GET /users."
+  "Update the README and Swagger docs to reflect changes to GET /users."
 - Push and open a PR, optionally using Claude/Cursor commands like /commit, /pr, or GitHub CLI integration.
 
 ## Benefits of the Exploratory Workflow

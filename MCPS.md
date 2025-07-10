@@ -1,3 +1,10 @@
+---
+layout: default
+title: Model Context Providers (MCPs)
+parent: Tools & Setup
+nav_order: 2
+---
+
 # MCP Use Cases
 
 Model Context Providers (MCPs) extend the AI agent’s capabilities by automatically injecting context from external sources into your prompts. Instead of manually copying and pasting information, MCPs allow the AI to access critical data like Jira tickets, Confluence docs, Figma designs, and GitHub discussions in real time. This improves the accuracy, speed, and quality of AI-generated code and responses.
@@ -27,14 +34,14 @@ MCPs are a core enabler for efficient agentic coding at scale, helping the AI wo
 
 When integrating Model Context Providers (MCPs) into your agentic-coding workflow, security must be front-of-mind. Follow these guardrails to protect your codebase, data, and credentials:
 
-| **Best-Practice**                                  | **Why it matters**                                                             | **What to do**                                                                                                                                                       |
-|----------------------------------------------------|----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Prefer official MCPs                               | Vendors maintain their own MCPs, patching bugs and security issues promptly.    | Use the MCP published by the API provider (e.g., GitHub, Atlassian, Figma). Avoid community forks unless absolutely necessary.                                       |
-| Keep secrets out of MCPs                           | Hard-coded credentials are a breach waiting to happen.                          | Store API keys or tokens in your secret-management layer (e.g., HashiCorp Vault, AWS Secrets Manager) and pass them via environment variables or a secrets-injection step. |
-| Apply least-privilege keys                         | Broad tokens increase blast radius if leaked.                                   | Generate scoped API keys that allow only the minimal actions the MCP needs (read-only if possible). Rotate them on a schedule.                                       |
-| Use a trusted middleware when no official MCP exists | Third-party automation hubs already isolate and encrypt credentials.            | Configure the middleware’s official connector and let it proxy requests, keeping your secrets out of an open-source repo.                                            |
-| Audit any unofficial open-source MCP               | Community packages can contain malicious code, outdated deps, or hidden telemetry. | Fork the repo, review every line, run static analysis (e.g., Semgrep), and pin dependency versions before deploying.                                                  |
-| Never trust closed-source, unofficial MCPs that demand credentials | You cannot inspect what you cannot see.                           | If the provider won’t open the code, treat it as an immediate deal-breaker—no exceptions.                                                                            |
+| **Best-Practice**                                                  | **Why it matters**                                                                 | **What to do**                                                                                                                                                             |
+| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Prefer official MCPs                                               | Vendors maintain their own MCPs, patching bugs and security issues promptly.       | Use the MCP published by the API provider (e.g., GitHub, Atlassian, Figma). Avoid community forks unless absolutely necessary.                                             |
+| Keep secrets out of MCPs                                           | Hard-coded credentials are a breach waiting to happen.                             | Store API keys or tokens in your secret-management layer (e.g., HashiCorp Vault, AWS Secrets Manager) and pass them via environment variables or a secrets-injection step. |
+| Apply least-privilege keys                                         | Broad tokens increase blast radius if leaked.                                      | Generate scoped API keys that allow only the minimal actions the MCP needs (read-only if possible). Rotate them on a schedule.                                             |
+| Use a trusted middleware when no official MCP exists               | Third-party automation hubs already isolate and encrypt credentials.               | Configure the middleware’s official connector and let it proxy requests, keeping your secrets out of an open-source repo.                                                  |
+| Audit any unofficial open-source MCP                               | Community packages can contain malicious code, outdated deps, or hidden telemetry. | Fork the repo, review every line, run static analysis (e.g., Semgrep), and pin dependency versions before deploying.                                                       |
+| Never trust closed-source, unofficial MCPs that demand credentials | You cannot inspect what you cannot see.                                            | If the provider won’t open the code, treat it as an immediate deal-breaker—no exceptions.                                                                                  |
 
 In the next sections, we will explain how to configure and use each MCP step-by-step inside your coding workflows.
 

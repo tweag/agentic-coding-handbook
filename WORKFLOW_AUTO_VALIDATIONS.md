@@ -1,3 +1,10 @@
+---
+layout: default
+title: Auto Validations
+parent: Core Workflows
+nav_order: 7
+---
+
 # Automatic Code Validations
 
 A powerful capability of AI coding agents is their ability to run code validation tools, analyze the feedback, and self-correct the code until it meets all defined quality standards. This turns your prompting loop into a smarter, more reliable workflow, where the AI not only writes code but also learns from validation outputs and fixes issues automatically.

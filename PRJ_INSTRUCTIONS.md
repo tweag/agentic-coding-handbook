@@ -1,3 +1,10 @@
+---
+layout: default
+title: Project Guidelines
+parent: Tools & Setup
+nav_order: 6
+---
+
 # Project Level Instructions
 
 One of the most effective ways to improve the quality of AI-generated code is by configuring project-level instructions that guide the behavior of GitHub Copilot and other coding agents. These instructions act like a persistent memory layer — they’re automatically injected into the LLM’s context, helping it follow your project's specific conventions and patterns without needing to be re-explained in every prompt. Copilot instructions can be used for keeping the behavior of the agent as you desire for your workflow. It both keeps how it works in terms of actions is going to execute and its also enforces the code quality.
@@ -30,14 +37,14 @@ Follow these guidelines:
 ### Be clear and directive
 
 - Use instruction-style language.
-✅ `Use Axios for all HTTP requests`
-❌ `We usually prefer Axios.`
+  ✅ `Use Axios for all HTTP requests`
+  ❌ `We usually prefer Axios.`
 
 ### Be specific
 
 - Avoid vague advice.
-✅ `Put all utility functions in src/utils using camelCase.`
-❌ `Keep things organized.`
+  ✅ `Put all utility functions in src/utils using camelCase.`
+  ❌ `Keep things organized.`
 
 ### Prioritize what the AI needs
 
@@ -69,8 +76,9 @@ Organize content with topics like:
 
 ```markdown
 # COPILOT INSTRUCTIONS OPERATIONAL GUIDELINES
-              
+
 ## PRIME DIRECTIVE
+
 Avoid working on more than one file at a time.
 Multiple simultaneous edits to a file will cause corruption.
 Be chatting and teach about what you are doing while coding.
@@ -78,52 +86,64 @@ Be chatting and teach about what you are doing while coding.
 ## LARGE FILE & COMPLEX CHANGE PROTOCOL
 
 ### MANDATORY PLANNING PHASE
+
 When working with large files (>300 lines) or complex changes:
+
 1. ALWAYS start by creating a detailed plan BEFORE making any edits
 2. Your plan MUST include:
+
 - All functions/sections that need modification
 - The order in which changes should be applied
 - Dependencies between changes
 - Estimated number of separate edits required
+
 3. Format your plan as:
-          
+
 ## PROPOSED EDIT PLAN
+
 Working with: [filename]
 Total planned edits: [number]
 
 ### MAKING EDITS
+
 - Focus on one conceptual change at a time
 - Show clear "before" and "after" snippets when proposing changes
 - Include concise explanations of what changed and why
 - Always check if the edit maintains the project's coding style
 
 ### Edit sequence:
+
 1. [First specific change] - Purpose: [why]
 2. [Second specific change] - Purpose: [why]
 3. Do you approve this plan? I'll proceed with Edit [number] after your confirmation.
 4. WAIT for explicit user confirmation before making ANY edits when user ok edit [number]
-          
-### EXECUTION PHASE: 
+
+### EXECUTION PHASE:
+
 - After each individual edit, clearly indicate progress:
-	"✅ Completed edit [#] of [total]. Ready for next edit?"
+  "✅ Completed edit [#] of [total]. Ready for next edit?"
 - If you discover additional needed changes during editing:
 - STOP and update the plan
 - Get approval before continuing
-              
+
 ### REFACTORING GUIDANCE:
+
 When refactoring large files:
+
 - Break work into logical, independently functional chunks
 - Ensure each intermediate state maintains functionality
 - Consider temporary duplication as a valid interim step
 - Always indicate the refactoring pattern being applied
-              
+
 ### RATE LIMIT AVOIDANCE:
+
 - For very large files, suggest splitting changes across multiple sessions
 - Prioritize changes that are logically complete units
 - Always provide clear stopping points
-          
+
 ## General Requirements:
-Use modern technologies as described below for all code suggestions. Prioritize clean, maintainable code with appropriate comments.        
+
+Use modern technologies as described below for all code suggestions. Prioritize clean, maintainable code with appropriate comments.
 ```
 
 ## Keep Reading

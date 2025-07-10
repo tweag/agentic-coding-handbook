@@ -1,3 +1,10 @@
+---
+layout: default
+title: Fundamentals
+parent: Prompt Engineering
+nav_order: 1
+---
+
 # Basics of Prompt Engineering
 
 Prompt engineering is the practice of writing clear, structured instructions to guide AI coding agents like GitHub Copilot Agent or Cursor. Just like you'd explain a task to a junior developer, your job is to describe what you want, where to do it, and how to do it — in a way the AI can understand and act on.
@@ -129,7 +136,7 @@ Skipping validation — always review, test, and verify AI output.
 
 https://shumerprompt.com/prompts/expert-conductor-reasoning-guide-prompt-2ff044e1-5e65-48b3-8004-5f51e10e4a94
 
-https://shumerprompt.com/prompts/vibe-coding-documentation-prompt-de4b2917-b4e3-44bd-ba7c-90eb09b508cd 
+https://shumerprompt.com/prompts/vibe-coding-documentation-prompt-de4b2917-b4e3-44bd-ba7c-90eb09b508cd
 
 https://shumerprompt.com/prompts/super-prompt-generator-optimizer-prompt-22b2a360-9935-49d6-81db-684385866847
 

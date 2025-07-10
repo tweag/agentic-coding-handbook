@@ -1,3 +1,10 @@
+---
+layout: default
+title: Zero/One/N-Shot Prompts
+parent: Prompt Engineering
+nav_order: 4
+---
+
 # Zero-Shot, One-Shot, and Multi-Shot Prompts
 
 Prompting is the language of AI. In agentic coding, how you structure your prompts determines not just the quality of the code — but whether the model understands your intent at all.
@@ -25,7 +32,7 @@ This page breaks down three foundational prompting methods — Zero-Shot, One-Sh
 ## Common use cases
 
 | **Prompt Type** | **Ideal Use Case**                                                                                                   |
-|-----------------|----------------------------------------------------------------------------------------------------------------------|
+| --------------- | -------------------------------------------------------------------------------------------------------------------- |
 | Zero-Shot       | Quick code snippets, refactors, doc generation, error analysis                                                       |
 | One-Shot        | Repeating logic (e.g., endpoint structure, naming conventions, form components)                                      |
 | Multi-Shot      | Bulk generation of tests, translation of logic across modules, repo-wide consistency (e.g., DTOs, service contracts) |
@@ -49,10 +56,10 @@ One-Shot Prompt
 ```txt
 Here’s how we write our endpoints:
 
-@Post('/users/register')  
-registerUser(@Body() body: RegisterUserDto) {  
-  return this.service.register(body);  
-}  
+@Post('/users/register')
+registerUser(@Body() body: RegisterUserDto) {
+  return this.service.register(body);
+}
 
 Now create an endpoint for POST /users/invite that follows the same pattern, usingInviteUserDto and inviteUser().
 ```
@@ -64,14 +71,14 @@ Multi-Shot Prompt
 ```txt
 Here's how we write our endpoints:
 
-@Post('/users/register')  
-registerUser(@Body() body: RegisterUserDto) {  
-  return this.service.register(body);  
-}  
- 
-@Post('/users/reset-password')  
-resetPassword(@Body() body: ResetPasswordDto) {  
-  return this.service.resetPassword(body);  
+@Post('/users/register')
+registerUser(@Body() body: RegisterUserDto) {
+  return this.service.register(body);
+}
+
+@Post('/users/reset-password')
+resetPassword(@Body() body: ResetPasswordDto) {
+  return this.service.resetPassword(body);
 }
 
 Now write a controller method for POST /users/invite.

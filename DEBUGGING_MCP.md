@@ -1,3 +1,10 @@
+---
+layout: default
+title: Debugging MCPs
+parent: Tools & Setup
+nav_order: 3
+---
+
 # Debugging with an MCP
 
 There are several Model Context Protocol (MCP) solutions for extracting runtime browser data for debugging and context-aware AI assistance. We evaluated a few current options and compared their abilities to capture console errors, network activity, and application state while ensuring security and privacy compliance. What follows is the preferred option, based on those evaluations.

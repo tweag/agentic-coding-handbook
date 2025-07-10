@@ -1,3 +1,10 @@
+---
+layout: default
+title: Quick Start Guide
+parent: Getting Started
+nav_order: 1
+---
+
 # Getting Started
 
 To work effectively with AI coding agents at Modus Create, your first step is setting up GitHub Copilot Agent inside Visual Studio Code.

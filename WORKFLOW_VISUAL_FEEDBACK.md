@@ -1,3 +1,10 @@
+---
+layout: default
+title: Visual Feedback Loop
+parent: Core Workflows
+nav_order: 4
+---
+
 # Visual Feedback Workflow with AI Agents
 
 When working on frontends, code alone doesn’t always tell the full story. What users see — and how the UI behaves across screen sizes, states, and interactions — is critical to quality. This workflow introduces how to use screenshots and browser context as inputs for AI-assisted iteration.

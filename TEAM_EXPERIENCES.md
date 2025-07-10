@@ -1,3 +1,10 @@
+---
+layout: default
+title: Team Experiences
+parent: Getting Started
+nav_order: 3
+---
+
 # Team's Experiences
 
 Please create a page under this page and share your experiences from applying the learnings from this handbook and overall learnings from your own experiments.

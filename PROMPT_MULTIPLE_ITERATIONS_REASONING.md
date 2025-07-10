@@ -1,3 +1,10 @@
+---
+layout: default
+title: Multiple Iterations Reasoning
+parent: Prompt Engineering
+nav_order: 3
+---
+
 # Multiple Iterations Reasoning Method
 
 The Multiple Iterations Reasoning prompt is a structured approach designed to guide AI systems through progressive rounds of self-improvement. This method leverages iterative analysis and refinement to produce solutions that are more robust, optimized, and thoroughly considered.
@@ -37,13 +44,13 @@ Provide your optimized solution with:
 
 This creates a self-reflective loop that encourages the AI to critically evaluate and improve its own work multiple times.
 
-| **Use Case**                              | **Why It Works**                                     |
-|-------------------------------------------|------------------------------------------------------|
-| Algorithm optimization                    | Forces consideration of edge cases and performance   |
-| System design refinement                  | Builds in layers of error handling and robustness    |
-| Code quality improvement                  | Progressively enhances readability and maintainability|
-| Problem-solving with constraints          | Tests solution against increasingly complex criteria |
-| Test coverage planning                    | Expands from basic to comprehensive test scenarios   |
+| **Use Case**                     | **Why It Works**                                       |
+| -------------------------------- | ------------------------------------------------------ |
+| Algorithm optimization           | Forces consideration of edge cases and performance     |
+| System design refinement         | Builds in layers of error handling and robustness      |
+| Code quality improvement         | Progressively enhances readability and maintainability |
+| Problem-solving with constraints | Tests solution against increasingly complex criteria   |
+| Test coverage planning           | Expands from basic to comprehensive test scenarios     |
 
 ## Example 1: Optimizing a Search Algorithm
 
@@ -79,6 +86,7 @@ Provide your optimized solution with:
 ```
 
 **Expected Outcome:**
+
 - Initial solution might use linear search O(n)
 - First iteration might identify binary search potential
 - Second iteration might handle the rotation complexity
@@ -118,9 +126,10 @@ Provide your optimized solution with:
 ```
 
 **Expected Outcome:**
+
 - Initial solution might use a simple time-based cache
 - Progressive iterations address invalidation strategies, memory concerns
-- Later rounds might introduce Redis, cache layers, or warm-up procedures 
+- Later rounds might introduce Redis, cache layers, or warm-up procedures
 - Final solution likely includes a comprehensive strategy with fallbacks
 
 ## Example 3: Building a Robust API Error Handling System
@@ -157,6 +166,7 @@ Provide your optimized solution with:
 ```
 
 **Expected Outcome:**
+
 - Initial solution might focus on basic error structure
 - Middle iterations refine retry policies, circuit breaking logic
 - Later iterations might add observability, error aggregation
@@ -164,14 +174,14 @@ Provide your optimized solution with:
 
 ## Summary: Why Use the Multiple Iterations Reasoning Pattern?
 
-| **Benefit**                                     | **Why It Helps in Agentic Coding**                    |
-|-------------------------------------------------|------------------------------------------------------|
-| Promotes depth over breadth                     | Forces solutions beyond the obvious first approach    |
-| Documents the evolution of thinking             | Creates transparency in the solution development      |
-| Identifies edge cases systematically            | Reduces the "oh, I didn't think of that" factor      |
-| Builds in justified refinement                  | Each improvement has explicit reasoning               |
-| Mimics real development processes               | Aligns with how engineers actually solve problems     |
-| Works well with modern AI models                | Leverages LLM capabilities for self-critique         |
+| **Benefit**                          | **Why It Helps in Agentic Coding**                 |
+| ------------------------------------ | -------------------------------------------------- |
+| Promotes depth over breadth          | Forces solutions beyond the obvious first approach |
+| Documents the evolution of thinking  | Creates transparency in the solution development   |
+| Identifies edge cases systematically | Reduces the "oh, I didn't think of that" factor    |
+| Builds in justified refinement       | Each improvement has explicit reasoning            |
+| Mimics real development processes    | Aligns with how engineers actually solve problems  |
+| Works well with modern AI models     | Leverages LLM capabilities for self-critique       |
 
 ## Variations
 
