@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Model Use Cases
 parent: Tools & Setup
 nav_order: 1
