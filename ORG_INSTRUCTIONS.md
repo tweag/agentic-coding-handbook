@@ -1,3 +1,10 @@
+---
+layout: default
+title: Organization Guidelines
+parent: Tools & Setup
+nav_order: 5
+---
+
 # Organization Level Instructions
 
 GitHub Copilot now supports organization-level instructions, allowing administrators to define guidance that applies to all repositories and all users within a GitHub organization. This is a powerful tool to promote consistency, security, and governance across all AI-assisted development workflows.
@@ -12,13 +19,13 @@ This creates a baseline AI behavior model for all teams under the org umbrella.
 
 ## How It Differs from Project-Level Instructions
 
-| **Feature**    | **Organization-Level**                             | **Project-Level**                                              |
-|----------------|----------------------------------------------------|----------------------------------------------------------------|
-| Scope          | All users & repos in the org                       | Only applies to a specific repo                                |
-| Who manages it | Org admins                                         | Repo maintainers or developers                                 |
-| When it loads  | Always in context                                  | Only when working in that repo                                 |
-| Purpose        | Company-wide guidance, policies, tone              | Repo-specific architecture, stack, naming, etc.                |
-| Format         | Text box in GitHub settings                        | Markdown file in repo root: `.github/copilot-instructions.md`  |
+| **Feature**    | **Organization-Level**                | **Project-Level**                                             |
+| -------------- | ------------------------------------- | ------------------------------------------------------------- |
+| Scope          | All users & repos in the org          | Only applies to a specific repo                               |
+| Who manages it | Org admins                            | Repo maintainers or developers                                |
+| When it loads  | Always in context                     | Only when working in that repo                                |
+| Purpose        | Company-wide guidance, policies, tone | Repo-specific architecture, stack, naming, etc.               |
+| Format         | Text box in GitHub settings           | Markdown file in repo root: `.github/copilot-instructions.md` |
 
 These two types of instructions are complementary: org-level defines global rules, project-level adds local specificity.
 
@@ -69,13 +76,13 @@ When unsure about security decisions, suggest reaching out in #ask-security.
 
 ## When to Use Project vs Org Instructions
 
-| **Scenario**                                 | **Use This**         |
-|----------------------------------------------|----------------------|
-| Defining architecture rules for a monorepo   | Project-level        |
-| Standardizing logging across all projects    | Organization-level   |
-| Enforcing naming conventions per team        | Project-level        |
-| Controlling AI suggestions for secret usage  | Organization-level   |
-| Teaching a repo-specific design pattern      | Project-level        |
+| **Scenario**                                | **Use This**       |
+| ------------------------------------------- | ------------------ |
+| Defining architecture rules for a monorepo  | Project-level      |
+| Standardizing logging across all projects   | Organization-level |
+| Enforcing naming conventions per team       | Project-level      |
+| Controlling AI suggestions for secret usage | Organization-level |
+| Teaching a repo-specific design pattern     | Project-level      |
 
 ## How to Configure
 
@@ -83,7 +90,7 @@ When unsure about security decisions, suggest reaching out in #ask-security.
 - Navigate to the Copilot tab.
 - Click Custom Instructions.
 - Enter your organization-wide instructions in the editor box.
-- Save — they’re now live for all Copilot Chat interactions in the org. 
+- Save — they’re now live for all Copilot Chat interactions in the org.
 
 Organization instructions are your first layer of LLM governance. They establish shared values and behaviors that AI should reflect — turning Copilot into an extension of your engineering culture.
 

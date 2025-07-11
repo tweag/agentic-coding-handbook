@@ -1,3 +1,10 @@
+---
+layout: default
+title: Debug Workflow
+parent: Core Workflows
+nav_order: 6
+---
+
 # Debugging Workflow for Agentic Coding
 
 Debugging in a Agentic coding workflow is not about blindly fixing bugs — it’s about building a feedback loop where AI helps identify, explain, and resolve issues systematically.
@@ -63,7 +70,6 @@ Paste logs directly when MCPs are unavailable:
 This error occurred after login: TypeError: Cannot read properties of null — fix based on this trace.
 ```
 
-
 ### Investigate Code Changes via GitHub MCPs
 
 Sometimes bugs are caused by recent commits.
@@ -106,18 +112,22 @@ Explain what’s broken and how to fix it, but do not modify any files yet.
 
 ## Summary: Debugging with AI, Done Right
 
-| **Practice**                | **Benefit**                         |
-|-----------------------------|-------------------------------------|
-| YOLO Mode                   | Fast fixes for obvious bugs         |
-| Chain-of-Thought Prompts    | Prevents wild guesses               |
-| Logging Before Fixing       | Easier diagnosis                    |
-| MCPs for Logs & Errors      | Real production context             |
-| GitHub MCP for Code Changes | Tracks regressions                  |
-| Two-Stage Debugging         | Reduces rework and scope creep      |
-| Checkpoints & Resets        | Keeps dev environment clean         |
+| **Practice**                | **Benefit**                    |
+| --------------------------- | ------------------------------ |
+| YOLO Mode                   | Fast fixes for obvious bugs    |
+| Chain-of-Thought Prompts    | Prevents wild guesses          |
+| Logging Before Fixing       | Easier diagnosis               |
+| MCPs for Logs & Errors      | Real production context        |
+| GitHub MCP for Code Changes | Tracks regressions             |
+| Two-Stage Debugging         | Reduces rework and scope creep |
+| Checkpoints & Resets        | Keeps dev environment clean    |
 
 Debugging is where most engineers waste time. With structured prompting, context injection, and thoughtful reasoning, agentic debugging becomes a superpower — not a struggle.
 
 ## References
 
 - [Using Copilot to Debug the Front End](https://www.loom.com/share/50de880c8ce5466d9d21c56e9d00bc30?sid=0c35aea6-596f-46e5-a9e3-3e6d6867b6fc)
+
+## Keep Reading
+
+[Memory Bank Workflow](./WORKFLOW_MEMORY_BANK.md)

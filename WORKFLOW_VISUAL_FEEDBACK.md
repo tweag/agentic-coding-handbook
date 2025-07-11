@@ -1,3 +1,10 @@
+---
+layout: default
+title: Visual Feedback Loop
+parent: Core Workflows
+nav_order: 4
+---
+
 # Visual Feedback Workflow with AI Agents
 
 When working on frontends, code alone doesn’t always tell the full story. What users see — and how the UI behaves across screen sizes, states, and interactions — is critical to quality. This workflow introduces how to use screenshots and browser context as inputs for AI-assisted iteration.
@@ -80,3 +87,7 @@ Given the failed API call shown in network logs, what’s likely missing in the 
 ## References
 
 - [Using Copilot with Visual Feedback](https://www.loom.com/share/a811bd60a39e4bd38073637e24101af8?sid=f3e88fab-2768-44bb-8b66-970229dbaee6)
+
+## Keep Reading
+
+[Debugging Workflow](./WORKFLOW_DEBUG.md)

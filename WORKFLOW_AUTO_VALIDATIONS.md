@@ -1,3 +1,10 @@
+---
+layout: default
+title: Auto Validations
+parent: Core Workflows
+nav_order: 7
+---
+
 # Automatic Code Validations
 
 A powerful capability of AI coding agents is their ability to run code validation tools, analyze the feedback, and self-correct the code until it meets all defined quality standards. This turns your prompting loop into a smarter, more reliable workflow, where the AI not only writes code but also learns from validation outputs and fixes issues automatically.
@@ -49,3 +56,7 @@ This ensures that no invalid code ever gets committed, keeping your repo clean a
 ## References
 
 - [Enhancing Code Quality with AI](https://www.loom.com/share/32bd23d355d9438587d55d7a87b58ed1)
+
+## Keep Reading
+
+[Exploratory & Refactoring Workflow](./WORKFLOW_EXPLORATORY.md)

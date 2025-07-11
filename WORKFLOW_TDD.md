@@ -1,3 +1,10 @@
+---
+layout: default
+title: Test-Driven Development
+parent: Core Workflows
+nav_order: 2
+---
+
 # Test Driven Development
 
 Test-Driven Development (TDD) and Agentic Coding may seem like opposites — one is structured and disciplined, the other fluid and intuitive. But when paired, they create a powerful feedback loop: TDD gives structure to your flow, and Agentic coding gives speed to your structure.
@@ -9,7 +16,7 @@ This combination shines when you’re working with complex logic files, such as 
 - **Tests act as prompts:** In the AI-assisted workflow, a test becomes a natural language spec that guides the AI toward exactly the behavior you expect. Instead of saying "generate a function that filters valid emails," you say it('should return only valid emails from a mixed list') and the AI writes the code to pass that test.
 
 - **You reduce hallucination:** The more precise the prompt (in this case, the test), the more accurate the generation.
-TDD keeps the LLM focused on small, testable goals instead of bloated implementations.
+  TDD keeps the LLM focused on small, testable goals instead of bloated implementations.
 
 - **It builds confidence:** When every code generation step is validated by a test, you know it's working. This is crucial when you’re using AI as your pair.
 
@@ -85,7 +92,7 @@ Format the result like this:
 \`\`\`
 
 You can group tests by theme if needed. Only include things that should be verified through tests.
-Avoid assumptions — reason from the rules given. 
+Avoid assumptions — reason from the rules given.
 Before starting creating the file, you can ask questions to the user to clarify your understanding.
 Check the boxes above as you progress. This is important, DO NOT FORGET ABOUT THIS.
 ```
@@ -157,3 +164,7 @@ Output:
 ## References
 
 - [TDD with Github Copilot Agent](https://www.loom.com/share/d442996affe14bdea81014183f633988)
+
+## Keep Reading
+
+[Automatic Code Validations](./WORKFLOW_AUTO_VALIDATIONS.md)

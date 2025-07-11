@@ -1,3 +1,10 @@
+---
+layout: default
+title: Three Experts Method
+parent: Prompt Engineering
+nav_order: 2
+---
+
 # Three Experts Method
 
 The Three Experts prompt is a powerful reasoning pattern designed to help AI simulate deeper thinking and avoid shallow or generic responses. In agentic coding, it’s especially useful when you're working through complex architectural decisions, refactoring strategies, or debugging multi-layer issues.
@@ -19,7 +26,7 @@ Continue until there’s consensus on the final answer.
 This creates a multi-step reasoning loop that encourages internal critique and deeper analysis.
 
 | **Use Case**                              | **Why It Works**                                  |
-|-------------------------------------------|---------------------------------------------------|
+| ----------------------------------------- | ------------------------------------------------- |
 | Choosing between architectural strategies | Reveals tradeoffs in tech decisions               |
 | Refactoring complex modules               | Surfaces alternative paths + risks                |
 | Debugging non-obvious bugs                | Simulates root-cause analysis                     |
@@ -92,7 +99,7 @@ Stop once consensus is reached.
 ## Summary: Why Use the Three Experts Pattern?
 
 | **Benefit**                                       | **Why It Helps in Agentic Coding**              |
-|---------------------------------------------------|-------------------------------------------------|
+| ------------------------------------------------- | ----------------------------------------------- |
 | Deepens reasoning                                 | Prevents superficial or default answers         |
 | Simulates tradeoffs                               | Mirrors real-world team decision dynamics       |
 | Reduces hallucination                             | Experts challenge each other's logic            |
@@ -111,3 +118,7 @@ Each shares their perspective, step-by-step, to align on a final implementation 
 ## References
 
 - [Leveraging AI with the Three Experts Technique](https://www.loom.com/share/50de91feb2ca4abdbca0521d8049d81d)
+
+## Keep Reading
+
+[Multiple Iterations Reasoning Method](./PROMPT_MULTIPLE_ITERATIONS_REASONING.md)

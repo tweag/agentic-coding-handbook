@@ -1,3 +1,10 @@
+---
+layout: default
+title: Privacy Considerations
+parent: Tools & Setup
+nav_order: 4
+---
+
 # Privacy Considerations for Agentic Coding
 
 As we adopt AI coding agents in our daily workflow, it's critical that we stay vigilant about data privacy and security. Tools like Cursor, GitHub Copilot Agent, Claude, and others introduce new capabilities — but also new risks if misused.

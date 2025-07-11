@@ -1,3 +1,10 @@
+---
+layout: default
+title: Memory Bank System
+parent: Core Workflows
+nav_order: 3
+---
+
 # Memory Bank
 
 AI models like Copilot and Cursor don’t have persistent memory. They forget everything when you close the tab. That’s where the Memory Bank comes in. A Memory Bank is a structured, markdown-based documentation system that acts as long-term memory for your AI agent. It allows the assistant to “remember” your project context, decisions, and progress across sessions.
@@ -55,22 +62,22 @@ GitHub Copilot doesn’t have built-in memory between sessions, but you can simu
 - Define the structure: We recommend structuring the file using the Memory Bank pattern from our experiment:
 
 ```txt
-# projectbrief.md  
+# projectbrief.md
 Describes the overall goals of the project, what we're building, and for whom.
 
-# productContext.md  
+# productContext.md
 Why this project exists, the problems it solves, user experience goals, and business context.
 
-# systemPatterns.md  
+# systemPatterns.md
 Document architecture choices, common design patterns, and preferred technical structures.
 
-# techContext.md  
+# techContext.md
 Describe technologies used, external APIs, dev setup, tooling decisions, and known constraints.
 
-# activeContext.md  
+# activeContext.md
 Current task, recent changes, open issues, known challenges, and next steps.
 
-# progress.md  
+# progress.md
 Track completed features, blockers, and evolving decisions over time.
 ```
 
@@ -102,5 +109,10 @@ Refer to the following memory files for deeper project understanding:
 ```
 
 ## References
+
 - [How to Use a Memory Bank in Copilot](https://www.loom.com/share/152cea77575148b8af9fe8538ed30c30?sid=e3dd85c5-60e4-4d54-973c-4d4a3ff89917)
 - [10x your Cursor Workflow with Memory Bank](https://www.youtube.com/watch?si=EiHdLnUQMBanl_eO&v=Uufa6flWid4&feature=youtu.be&themeRefresh=1)
+
+## Keep Reading
+
+[Model Context Providers (MCPs)](./MCPS.md)

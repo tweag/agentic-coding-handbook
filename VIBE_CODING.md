@@ -1,3 +1,10 @@
+---
+layout: default
+title: Vibe Coding Philosophy
+parent: Getting Started
+nav_order: 2
+---
+
 # Agentic Coding at Modus vs Vibe Coding
 
 ## Our Rule of Thumb

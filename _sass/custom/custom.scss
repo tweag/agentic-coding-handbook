@@ -1,0 +1,282 @@
+// OpenAI Platform-inspired customizations
+// Preserving just-the-docs mobile functionality
+
+// Enhanced sidebar styling (OpenAI-like)
+.side-bar {
+    background-color: #1a1a1a !important;
+    border-right: 1px solid #404040;
+    
+    // Site title styling
+    .site-title {
+      color: #ffffff !important;
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 0 1.5rem 2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: block;
+      text-align: center;
+      
+      &:hover {
+        color: #ffffff !important;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  // Adjust main content for desktop only
+  @media (min-width: 769px) {
+    .main {
+      margin-left: 280px !important;
+    }
+    
+    .side-bar {
+      width: 280px;
+      padding: 1.5rem 0;
+    }
+  }
+  
+  // Main content styling
+  .main-content-wrap {
+    max-width: none !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .main-content {
+    max-width: none !important;
+    text-align: left;
+    background-color: #111111 !important;
+    color: #b3b3b3 !important;
+    min-height: 100vh;
+    
+    h1, h2, h3, h4, h5, h6 {
+      color: #ffffff !important;
+      font-weight: 600;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    
+    a {
+      color: #10a37f !important;
+      
+      &:hover {
+        color: #0d8f72 !important;
+      }
+    }
+  }
+  
+  // Search styling
+  .search {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    
+    .search-input-wrap {
+      position: relative;
+      margin-top: 1rem;
+      
+      .search-input {
+        background-color: #2d2d2d !important;
+        border: 1px solid #404040 !important;
+        border-radius: 8px;
+        color: #b3b3b3 !important;
+        padding: 12px 16px 12px 40px;
+        font-size: 14px;
+        width: 100%;
+        
+        &::placeholder {
+          color: #808080 !important;
+        }
+        
+        &:focus {
+          border-color: #10a37f !important;
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(16, 163, 127, 0.1);
+        }
+      }
+      
+      .search-label {
+        padding-left: 1rem;
+      }
+    }
+  }
+  
+  // Navigation styling
+  .nav-list {
+    padding: 0 1rem;
+    
+    .nav-list-item {
+      margin: 0;
+      
+      .nav-list-link {
+        color: #999999 !important;
+        padding: 8px 1rem;
+        border-radius: 6px;
+        margin: 2px 0;
+        font-size: 14px;
+        font-weight: 400;
+        transition: all 0.2s ease;
+        display: block;
+        
+        &:hover {
+          background-color: #2d2d2d !important;
+          color: #ffffff !important;
+          text-decoration: none;
+        }
+        
+        &.active {
+          background-color: #10a37f !important;
+          color: #ffffff !important;
+          font-weight: 500;
+        }
+      }
+      
+      // Child navigation
+      .nav-list {
+        padding-left: 1rem;
+        
+        .nav-list-link {
+          font-size: 13px;
+          padding: 6px 1rem;
+        }
+      }
+    }
+  }
+  
+  // Mobile menu button styling (preserve original functionality)
+  .site-nav,
+  .site-header {
+    background-color: #1a1a1a !important;
+    border-bottom: 1px solid #404040;
+  }
+  
+  .site-button {
+    background: #10a37f !important;
+    color: #ffffff !important;
+    border: none !important;
+
+    .icon {
+      color: #ffffff !important;
+    }
+    
+    &:hover {
+      background: #0d8f72 !important;
+    }
+  }
+  
+  // Body and html styling
+  body {
+    background-color: #111111 !important;
+    color: #b3b3b3 !important;
+  }
+  
+  .site-wrap {
+    max-width: none !important;
+  }
+  
+  // Code blocks
+  pre, code {
+    background-color: #2d2d2d !important;
+    color: #cccccc !important;
+    border: 1px solid #404040 !important;
+  }
+  
+  // Alert boxes for dark theme
+  .alert {
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    border-left: 4px solid;
+    
+    &.alert-warning {
+      background-color: rgba(255, 193, 7, 0.1) !important;
+      border-left-color: #ffc107;
+      color: #ffc107 !important;
+    }
+    
+    &.alert-info {
+      background-color: rgba(16, 163, 127, 0.1) !important;
+      border-left-color: #10a37f;
+      color: #10a37f !important;
+    }
+  }
+  
+  // Scrollbar styling for dark theme
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #111111;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #404040;
+    border-radius: 6px;
+    border: 2px solid #111111;
+    
+    &:hover {
+      background: #666666;
+    }
+    
+    &:active {
+      background: #808080;
+    }
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: #111111;
+  }
+  
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #111111;
+  }
+  
+  .side-bar {
+    scrollbar-width: thin;
+    scrollbar-color: #404040 #1a1a1a;
+    
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    &::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: #404040;
+      border-radius: 4px;
+      border: 1px solid #1a1a1a;
+      
+      &:hover {
+        background: #666666;
+      }
+    }
+  }
+  
+  // Mobile adjustments - preserve original behavior
+  @media (max-width: 768px) {
+    .main-content-wrap {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .site-header {
+      .site-title {
+        margin-bottom: 0;
+        padding: 1rem 0.75rem;
+        font-size: 1.5rem !important;
+      }
+    }
+
+  }

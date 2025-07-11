@@ -1,3 +1,10 @@
+---
+layout: page
+title: Model Use Cases
+parent: Tools & Setup
+nav_order: 1
+---
+
 # Models Use Cases
 
 When integrating AI agents into your development process, selecting the right foundation model is critical for productivity, quality of the output code, and cost-efficiency. Based on our internal experiment and industry observations, here’s how to evaluate and use the leading models:
@@ -42,11 +49,11 @@ When integrating AI agents into your development process, selecting the right fo
 
 ## Comparison table
 
-| **LLM**     | **Best at**                                         | **Avoid when**                             |
-|-------------|-----------------------------------------------------|--------------------------------------------|
-| Claude 3.7  | System reasoning, specs, debugging                  | You need fast short feedback loops         |
-| GPT 4o      | UI, scaffolding, fast prompting                     | You need deep logical accuracy             |
-| Gemini 2.5  | Infra/codebase-wide operations and larger codebases | You're doing small or interactive tasks    |
+| **LLM**    | **Best at**                                         | **Avoid when**                          |
+| ---------- | --------------------------------------------------- | --------------------------------------- |
+| Claude 3.7 | System reasoning, specs, debugging                  | You need fast short feedback loops      |
+| GPT 4o     | UI, scaffolding, fast prompting                     | You need deep logical accuracy          |
+| Gemini 2.5 | Infra/codebase-wide operations and larger codebases | You're doing small or interactive tasks |
 
 Each model offers a unique advantage depending on the nature of the task. For day-to-day work, a combination approach using GPT-4o for speed and Claude/Gemini for structure often yields the best outcome.
 
@@ -78,11 +85,11 @@ This section explains why developers must learn to work efficiently, and why eng
 - **Limit Output Size:** Add constraints: `Return only the code, no explanation.`, `Limit to 20 lines.` Keeps the interaction sharp and reduces unnecessary token consumption, especially in tools where both input and output count toward your quota.
 - **Avoid Recursive Prompt Chains Without Limits:** Prompts like `Refine this 10 times` may sound clever but can generate thousands of tokens. Use: `Improve this once. Stop after 2 iterations.`
 - **Use Shorter Models for Simpler Tasks:** For documentation, variable naming, or test generation, models like GPT-3.5 or Claude 3.5 are cheaper and fast enough.
-Reserve GPT-4 or Claude 3.7 for architectural reasoning or multi-file refactoring.
+  Reserve GPT-4 or Claude 3.7 for architectural reasoning or multi-file refactoring.
 - **Use Memory Banks and Instructions Files:** Store recurring context (architecture rules, naming patterns, stack details) in `.github/copilot-instructions.md`, `.cursor/rules`, or `CLAUDE.md`. This prevents repeating the same setup context in every prompt — a common source of wasted tokens.
 
 | **Prompt Style**          | **Input Tokens** | **Output Tokens** | **Total** | **Result**               |
-|---------------------------|------------------|-------------------|-----------|--------------------------|
+| ------------------------- | ---------------- | ----------------- | --------- | ------------------------ |
 | Chatty, vague, multi-task | 700              | 1400              | 2100      | Low quality, AI misfires |
 | Focused, scoped, clear    | 200              | 600               | 800       | High quality, no retries |
 
