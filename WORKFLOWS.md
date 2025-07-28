@@ -32,6 +32,8 @@ Use Git to keep track of changes: Work with AI to chunk the work in smaller batc
 
 - **[Memory Bank](./WORKFLOW_MEMORY_BANK.md):** AI models like Copilot and Cursor don’t have persistent memory. They forget everything when you close the tab. That’s where the Memory Bank comes in. A Memory Bank is a structured, markdown-based documentation system that acts as long-term memory for your AI agent. It allows the assistant to “remember” your project context, decisions, and progress across.
 
+- **[Code Migration](./WORKFLOW_CODE_MIGRATION.md)**: A structured approach to modernizing legacy code with AI assistance. This workflow focuses on larger migrations that move from legacy codebases to modern architectures. It emphasizes understanding the legacy system first, planning incremental migration strategies using patterns like the strangler pattern, introducing tests as safety nets, and defining clear target architectures. The workflow combines AI agents for code analysis, migration planning, and incremental refactoring while maintaining human oversight for architectural decisions and validation.
+
 ## Keep Reading
 
 [MCP Use Cases](./MCPS.md)
