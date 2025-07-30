@@ -1,4 +1,4 @@
-# 🔁 Migration Workflow
+# Migration Workflow
 
 *A structured approach to modernizing legacy code with the help of AI*
 
@@ -8,11 +8,11 @@ This workflow builds on the [Refactoring Workflow](./WORKFLOW_REFACTORING.md) bu
 
 This guide outlines how to combine agentic tools (e.g., Copilot Chat, Cursor, Claude) with deliberate human design to migrate legacy systems safely, incrementally, and with confidence.
 
-> ⚠️ **Important:** Avoid treating migration as a big-bang rewrite. Break the scope into manageable, well-defined chunks. This reduces risk, accelerates feedback, and allows the new system to deliver value earlier.
+> **Important:** Avoid treating migration as a big-bang rewrite. Break the scope into manageable, well-defined chunks. This reduces risk, accelerates feedback, and allows the new system to deliver value earlier.
 
 ---
 
-## 🔍 Step 1: Understand the Legacy Codebase
+## Step 1: Understand the Legacy Codebase
 
 Before touching anything, build a mental model of how the legacy app works.
 
@@ -34,7 +34,7 @@ Repeat this per module to reduce hallucination risk. Use chain-of-thought Q\&A i
 
 ---
 
-## ⚖️ Step 2: Plan the Migration Strategy
+## Step 2: Plan the Migration Strategy
 
 Avoid rewriting everything at once. Instead, define a **gradual migration plan**.
 
@@ -66,7 +66,38 @@ Document the plan and revisit it regularly.
 
 ---
 
-## 🧪 Step 3: Introduce Tests on the Legacy Side
+## Step 3: Establish Stakeholder Communication
+
+**Most migrations fail due to misaligned expectations, not code quality.** Establish clear communication channels early.
+
+### Key Communication Elements
+
+* **Progress Dashboard**: Visual representation of migration status (% complete, modules migrated, risks identified)
+* **Regular Updates**: Weekly/bi-weekly reports with concrete progress metrics
+* **Risk Communication**: Transparent about potential disruptions, timelines, and mitigation strategies
+* **Business Impact Translation**: Convert technical progress into business value metrics
+
+### Use AI agents for stakeholder communication to
+
+* Generate executive summaries from technical progress reports
+* Create visual progress dashboards using migration metrics
+* Draft stakeholder-friendly explanations of technical decisions
+* Suggest communication templates for different audience types (executives, product managers, end users)
+
+#### Suggested Communication Template
+
+```markdown
+Migration Progress Update - Week X
+- Modules Completed: X/Y (Z% complete)
+- Business Value Delivered: [specific features or improvements]
+- Upcoming Milestones: [next 2-3 deliverables]
+- Risks & Mitigations: [current blockers and solutions]
+- Timeline Status: [on track, delayed, ahead of schedule]
+```
+
+---
+
+## Step 4: Introduce Tests on the Legacy Side
 
 Before any migration or analysis begins, build a safety net.
 
@@ -91,7 +122,7 @@ Use AI to bootstrap test scaffolding from existing code snippets.
 
 ---
 
-## 🔁 Step 4: Map the Functional and Data Flows
+## Step 5: Map the Functional and Data Flows
 
 Once files are understood individually, map how they interact.
 
@@ -112,7 +143,7 @@ Save this as living documentation. Use it to guide architectural decisions.
 
 ---
 
-## 🧱 Step 5: Define the Target Architecture
+## Step 6: Define the Target Architecture
 
 Migration without a destination is just refactoring chaos.
 
@@ -134,7 +165,56 @@ This doesn’t need to be exhaustive, but it must provide **direction**.
 
 ---
 
-## 💥 Step 6: Identify and Isolate Technical Debt
+## Step 7: Plan Rollback & Fallback Mechanisms
+
+Legacy systems often have implicit assumptions that need explicit safety nets during migration.
+
+### Critical Rollback Considerations
+
+* **Feature Flags**: Use toggles to switch between legacy and new implementations
+* **Data Synchronization**: Ensure data consistency during rollbacks
+* **Traffic Routing**: Ability to redirect users back to legacy systems
+* **Security Context**: Handle authentication/authorization state transitions
+
+### Security Migration Gotchas
+
+* **Hardcoded Secrets**: Legacy systems often embed credentials directly in code
+* **Legacy Auth Patterns**: Session-based auth vs. modern token-based systems
+* **Permission Models**: Role-based access may need translation layers
+
+### Use AI agents for rollback planning to
+
+* Identify hardcoded secrets and suggest secure alternatives
+* Generate feature flag implementations for gradual rollouts
+* Create rollback checklists and procedures
+* Analyze authentication flows and suggest migration paths
+* Design data synchronization strategies between old and new systems
+
+#### Rollback Checklist Template
+
+```markdown
+Pre-Migration:
+[ ] Feature flags implemented and tested
+[ ] Data backup and sync mechanisms verified
+[ ] Rollback procedure documented and rehearsed
+[ ] Security context transition plan validated
+
+During Migration:
+[ ] Monitor error rates and performance metrics
+[ ] Validate authentication/authorization flows
+[ ] Confirm data consistency between systems
+[ ] Test rollback triggers under load
+
+Post-Migration:
+[ ] Keep legacy system warm for X days
+[ ] Monitor for delayed edge cases
+[ ] Document lessons learned
+[ ] Update rollback procedures for next iteration
+```
+
+---
+
+## Step 8: Identify and Isolate Technical Debt
 
 Migration is the perfect moment to surface — and kill — hidden debt.
 
@@ -156,7 +236,7 @@ Validate AI suggestions manually.
 
 ---
 
-## 🧠 Step 7: Prompt Engineering for Migration
+## Step 9: Prompt Engineering for Migration
 
 Agents need context. That means:
 
@@ -179,7 +259,63 @@ Based on the legacy function `processLegacyTransaction()`, can you extract the b
 
 ---
 
-## 📊 Step 8: Define Success Metrics
+## Step 10: Modernize Toolchain & Infrastructure
+
+**Migration isn't just code** — it often includes modernizing the entire development and deployment ecosystem. Plan these updates to run **parallel** to code migration where possible.
+
+### Infrastructure Modernization Areas
+
+* **CI/CD Pipelines**: Jenkins → GitHub Actions, CircleCI, or similar
+* **Observability Stack**: Legacy monitoring → OpenTelemetry, structured logging
+* **Deployment Strategy**: Manual deploys → Infrastructure as Code (Terraform, CDK)
+* **Development Tools**: IDE setup, linting, testing frameworks
+
+### Use AI agents for infrastructure migration to
+
+* Generate GitHub Actions workflows from existing Jenkins pipelines
+* Create Infrastructure as Code templates for current manual deployments
+* Suggest observability improvements and instrumentation points
+* Generate migration scripts for database schemas and data
+* Design monitoring dashboards for both legacy and new systems
+
+### Migration Timeline Priorities
+
+1. **Development tools first** - improves developer velocity immediately
+2. **CI/CD next** - ensures safe, repeatable deployments
+3. **Observability early** - provides visibility into migration progress
+4. **Infrastructure last** - once code patterns are established
+
+#### Infrastructure Migration Checklist
+
+```markdown
+Development Environment:
+[ ] Modern IDE configuration and extensions
+[ ] Automated code formatting and linting
+[ ] Local development environment automation
+[ ] Testing framework modernization
+
+CI/CD Pipeline:
+[ ] Automated testing in CI
+[ ] Security scanning integration
+[ ] Deployment automation
+[ ] Rollback mechanisms
+
+Observability:
+[ ] Structured logging implementation
+[ ] Metrics collection and dashboards
+[ ] Distributed tracing setup
+[ ] Alerting and incident response
+
+Infrastructure:
+[ ] Infrastructure as Code adoption
+[ ] Security baseline hardening
+[ ] Backup and disaster recovery
+[ ] Performance monitoring
+```
+
+---
+
+## Step 11: Define Success Metrics
 
 Define KPIs before starting:
 
@@ -204,7 +340,51 @@ Track these over time to justify the investment.
 
 ---
 
-## 🔌 Final Notes
+## Step 12: Prepare Developer Onboarding Documentation
+
+**New developers joining mid-migration need context fast.** Create living documentation that captures decisions and rationale.
+
+### Essential Onboarding Materials
+
+* **Migration Decision Log**: Why certain approaches were chosen over alternatives
+* **Architecture Decision Records (ADRs)**: Document significant technical decisions
+* **Code Map**: Visual guide showing what's been migrated, what's in progress, and what's legacy
+* **Local Development Setup**: How to run both legacy and new systems locally
+
+### Use AI agents for onboarding to
+
+* Generate ADRs from code changes and migration decisions
+* Create visual code maps showing migration progress
+* Draft onboarding checklists for new team members
+* Maintain up-to-date setup instructions based on current codebase state
+* Generate context-rich code comments explaining migration-specific patterns
+
+#### Sample ADR Template
+
+```markdown
+# ADR-001: Migration Strategy for User Authentication
+
+## Status: Accepted
+
+## Context
+Legacy system uses session-based auth with server-side state.
+Modern requirements need stateless, scalable authentication.
+
+## Decision
+Implement JWT-based authentication with refresh token rotation.
+
+## Consequences
+- Positive: Stateless, horizontally scalable
+- Negative: Requires token refresh logic
+- Migration: Dual-mode support during transition
+
+## Implementation Notes
+[Technical details and code examples]
+```
+
+---
+
+## Final Notes
 
 Migration is as much about **understanding and documentation** as it is about coding. By combining prompt engineering, test-driven safety nets, and architecture-guided planning, you can modernize legacy systems without going blind.
 
