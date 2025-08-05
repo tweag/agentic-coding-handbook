@@ -27,6 +27,9 @@ GitHub Copilot Agent Mode represents the next evolution in AI-assisted developme
 - **Architectural awareness**: Respects existing patterns, conventions, and project structure
 - **Cross-cutting concerns**: Handles refactoring, testing, documentation, and infrastructure changes holistically
 
+> **Important Note**: While this training demonstrates specific tools like Cursor, VS Code, and GitHub Copilot, **remember that tools are secondary**. The **core value lies in understanding and applying AI concepts** to extend your knowledge and improve productivity across any development environment. Our goal is to empower you to adapt and apply these concepts with whatever tools are available at your respective companies, rather than becoming dependent on any particular stack. Focus on the underlying principles that can be transferred to any AI-assisted development workflow.
+
+
 ---
 
 ## **Delivery Time**
