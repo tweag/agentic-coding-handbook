@@ -23,6 +23,7 @@ Before touching anything, build a mental model of how the legacy app works.
 * Identify relationships between components and dependencies
 * Search for legacy patterns and undocumented logic through comments, unused paths, or inline configuration
 * Suggest boundaries or seams that can be used to insert logging or adapter logic later on
+* Identify potential migration challenges (e.g., lack of tests, complex dependencies, custom functions or modules)
 
 #### Suggested Prompt:
 
@@ -108,6 +109,8 @@ Legacy systems often lack test coverage — use that to your advantage.
 * Derive tests from **real input/output examples** in the existing system
 
 These tests will serve as contracts to validate the new implementation, making sure you're not rewriting blindly.
+
+> **Note:** Make sure to cover the critical paths and edge cases. If, for some reason, there are functionalities that are not being used, consider removing them to reduce complexity or rewriting unnecessary parts.
 
 ### Use AI agents to:
 
