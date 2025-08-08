@@ -15,7 +15,7 @@ To work effectively with AI coding agents at Modus Create, your first step is se
 
 - **Install GitHub Copilot Extension**: Install the GitHub Copilot extension by following the guide at [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/setup);
 
-- **Enable GitHub Copilot Agent Mode**: As of today, April 28th 2025, Agent mode requires to be manually enabled by following the guidance at [Copilot Agent Mode Setup](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode);
+- **Enable GitHub Copilot Agent Mode**: As of writing (April 2025), Agent mode requires to be manually enabled by following the guidance at [Copilot Agent Mode Setup](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode);
 
 After going through the above steps, you should be able to see the agent option:
 
