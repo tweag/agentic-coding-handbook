@@ -99,6 +99,8 @@ Write tests for report parser.
 
 ### Use a reasoning-first prompt format
 
+These methods improve architectural decisions and reduce low-quality responses.
+
 #### Three Experts Method
 
 ```txt
@@ -109,7 +111,6 @@ Simulate three different experts answering the below questions. All experts will
 
 ```txt
 Try solving this <add context from IDE>. Then improve your answer in 3 iterations by critiquing and rewriting each version.
-These methods improve architectural decisions and reduce low-quality responses.
 ```
 
 #### Iterate and refine
