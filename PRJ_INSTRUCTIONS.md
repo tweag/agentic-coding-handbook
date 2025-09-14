@@ -13,16 +13,16 @@ One of the most effective ways to improve the quality of AI-generated code is by
 
 During the experiment, we found that codifying quality expectations and design patterns up front made the AI much more likely to generate correct, review-ready code. It also reduced the need for prompt repetition, improved consistency between developers, and accelerated onboarding.
 
-This concept is directly aligned with Cursor’s .cursor/rules, which was a key enabler in our experiment. The good news is: GitHub Copilot now supports this too through custom instructions.
+This concept is directly aligned with Cursor’s `.cursor/rules`, which was a key enabler in our experiment. The good news is: GitHub Copilot now supports this too through custom instructions.
 
 ## What to Include in Project Instructions
 
-Create a file named .github/copilot-instructions.md in the root of your repo. In this Markdown file, document anything you want the AI to consider "non-negotiable" about how your team works, such as:
+Create a file named `.github/copilot-instructions.md` in the root of your repo. In this Markdown file, document anything you want the AI to consider "non-negotiable" about how your team works, such as:
 
 - Architecture decisions (e.g., This project uses a layered architecture with separate domain and infrastructure folders.)
 - Naming conventions and file structure guidelines
 - Security patterns (e.g., All user input must be sanitized before DB insertion.)
-- Code quality expectations (e.g., Use ?? instead of || for nullish checks.)
+- Code quality expectations (e.g., Use `??` instead of `||` for nullish checks.)
 - Testing rules (e.g., Every service must include unit tests using Jest and describe.each for parameterized coverage.)
 - What to avoid (e.g., Never use any as a type.)
 
@@ -30,7 +30,7 @@ Create a file named .github/copilot-instructions.md in the root of your repo. In
 
 ## How to Write a Good Project Instructions File
 
-The .github/copilot-instructions.md (or .cursor/rules) file helps AI generate code that aligns with your team’s standards. Think of it as writing onboarding notes for a junior dev who will follow your rules exactly — but won’t ask questions.
+The `.github/copilot-instructions.md` (or `.cursor/rules`) file helps AI generate code that aligns with your team’s standards. Think of it as writing onboarding notes for a junior dev who will follow your rules exactly — but won’t ask questions.
 
 Follow these guidelines:
 
@@ -81,7 +81,7 @@ Organize content with topics like:
 
 Avoid working on more than one file at a time.
 Multiple simultaneous edits to a file will cause corruption.
-Be chatting and teach about what you are doing while coding.
+Be chatty and teach about what you are doing while coding.
 
 ## LARGE FILE & COMPLEX CHANGE PROTOCOL
 
