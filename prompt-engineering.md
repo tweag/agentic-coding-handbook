@@ -24,7 +24,7 @@ A prompt is the main way you feed task-level context to AI. Since the model can'
 ## What You'll Master
 
 - **Fundamentals** - Core principles and practical techniques
-- **Advanced Methods** - Three Experts, Multiple Iterations reasoning
+- **Advanced Methods** - Three Experts, Multiple Iterations Reasoning
 - **Shot Techniques** - Zero-shot, one-shot, and few-shot prompting
 - **Real Examples** - Templates you can use immediately
 
