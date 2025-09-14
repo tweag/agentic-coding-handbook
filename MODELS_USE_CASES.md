@@ -17,7 +17,7 @@ When integrating AI agents into your development process, selecting the right fo
 
 ### Ideal Use Cases Claude 3.5 / 3.7 (Anthropic)
 
-- Writing comprehensive specs or planning files like spec.md, plan.md or todo.md.
+- Writing comprehensive specs or planning files like `spec.md`, `plan.md` or `todo.md`.
 - Refactoring legacy code with unclear logic but with relatively low amount of code.
 - Debugging hard-to-identify issues with long history or dependencies.
 
@@ -73,9 +73,9 @@ This section explains why developers must learn to work efficiently, and why eng
 
 ### For Managers
 
-- **AFlat-rate is not unlimited:** Even with monthly pricing, most tools have soft or hard caps. Token abuse leads to throttling or degraded service across the team.
-- **ATrack usage:** Understanding team-wide usage patterns can help plan licenses, detect misuse, and manage renewal tiers.
-- **AToken efficiency = productivity efficiency:** Well-structured AI interactions save engineering time, avoid retries, and improve project timelines.
+- **A flat-rate is not unlimited:** Even with monthly pricing, most tools have soft or hard caps. Token abuse leads to throttling or degraded service across the team.
+- **Track usage:** Understanding team-wide usage patterns can help plan licenses, detect misuse, and manage renewal tiers.
+- **Token efficiency = productivity efficiency:** Well-structured AI interactions save engineering time, avoid retries, and improve project timelines.
 
 ## Best Practices for Developers: Prompt Efficiently, Work Smart
 
@@ -98,7 +98,7 @@ Even small improvements save thousands of tokens per day when repeated across en
 ## What Managers Should Do
 
 - Set token-awareness as a team expectation — just like we manage test coverage or code review discipline.
-- Encourage shared context assets (instructions files, prompt plans, spec.md, etc.).
+- Encourage shared context assets (instructions files, prompt plans, `spec.md`, etc.).
 - Monitor usage if possible — via OpenAI dashboards, Claude usage logs, or billing APIs.
 - Default to value-tier models where appropriate (e.g., staging/dev workflows).
 
