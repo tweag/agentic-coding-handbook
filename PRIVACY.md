@@ -21,7 +21,7 @@ This includes debugging issues, writing test cases, or requesting data transform
 
 ### ❌ Do not attach files containing sensitive data
 
-Avoid storing at the codebase (even if git ignored), uploading or referencing exports with live data — such as CSVs, PDF reports, or logs with user identifiers.
+Avoid storing in the codebase (even if git ignored), uploading or referencing exports with live data — such as CSVs, PDF reports, or logs with user identifiers.
 
 These files may be stored temporarily or indexed by your IDE or tool.
 
@@ -53,7 +53,7 @@ Preferred tools at Modus Create:
 
 ### ✅ Use memory files or documentation, not live data, for context.
 
-Store reusable information in safe .md files like spec.md, activeContext.md, and .copilot-instructions.md.
+Store reusable information in safe .md files like `spec.md`, `activeContext.md`, and `.copilot-instructions.md`.
 
 These are indexed but controllable, and never contain user data.
 
