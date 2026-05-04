@@ -26,15 +26,15 @@ The sidebar contains everything you need to master agentic coding. Here are the 
 
 Your first steps with AI-powered development and the mindset shift required.
 
-### 🔄 **[Core Workflows](core-workflows/)**
+### 🔄 **[Core Workflows](workflows/)**
 
 Battle-tested patterns that our teams use daily to deliver high-quality software.
 
-### 🧠 **[Prompt Engineering](prompt-engineering/)**
+### 🧠 **[Prompt Engineering](prompts/)**
 
 Master the art of communicating effectively with AI coding agents.
 
-### 🛠️ **[Tools & Setup](tools-setup/)**
+### 🛠️ **[Tools & Setup](tools/)**
 
 Configure your development environment for maximum effectiveness.
 
