@@ -6,7 +6,7 @@
 
 [**Slide Deck**](https://docs.google.com/presentation/d/1bdjGgnPWV6Dqhi7Hy7KOZvqM1iz-u7q5M5CSBbxZi5o/edit?slide=id.g1ff7b2f3b96_0_2674&pli=1#slide=id.g1ff7b2f3b96_0_2674)
 
-[**Training Repository**](https://github.com/moacir-rodrigues-petry/agentic-coding-wip)
+[**Training Repository**](https://github.com/ModusCreateOrg/agentic-coding-training)
 
 ---
 
@@ -42,7 +42,7 @@ GitHub Copilot Agent Mode represents the next evolution in AI-assisted developme
 **Required Setup (Complete 24 hours before training):**
 - [ ] **GitHub Copilot Business/Enterprise subscription** with Agent Mode enabled
 - [ ] **Supported IDE installed** (VS Code recommended; Cursor supported; JetBrains supported but Agent Mode features may vary)
-- [ ] **Fork or clone the training repository**: https://github.com/moacir-rodrigues-petry/agentic-coding-wip
+- [ ] **Fork or clone the training repository**: https://github.com/ModusCreateOrg/agentic-coding-training
 - [ ] **Verify Agent Mode is available** in the Copilot Chat panel (Ask / Plan / Agent dropdown)
 - [ ] **Verify Agent Mode functionality** with a simple test prompt
 - [ ] **Join training Slack channel**: #copilot-agent-training
