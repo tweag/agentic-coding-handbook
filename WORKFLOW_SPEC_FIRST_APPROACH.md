@@ -7,7 +7,7 @@ nav_order: 1
 
 # Spec-First Approach
 
-AI coding agents like Copilot or Cursor rely entirely on what you give them as input. If your context is vague or scattered, the AI will produce code that’s inaccurate, inconsistent, or overly generic. That’s where Spec-First approach shines: it is an practice that allows you to feed the AI a high-quality, focused scope of work, leading to better outputs with fewer corrections.
+AI coding agents like Copilot or Cursor rely entirely on what you give them as input. If your context is vague or scattered, the AI will produce code that’s inaccurate, inconsistent, or overly generic. That’s where the Spec-First approach shines: it is a practice that allows you to feed the AI a high-quality, focused scope of work, leading to better outputs with fewer corrections.
 
 Spec-First is about starting the agent conversation with clarity, not code. Instead of jumping into implementation, you begin by collaborating with the AI to generate a detailed, structured specification of the feature. This gives both you and the model a shared understanding before a single line of code is written.
 

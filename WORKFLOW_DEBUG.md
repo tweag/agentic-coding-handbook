@@ -25,7 +25,7 @@ This page outlines the core techniques to debug efficiently with AI agents, usin
 Start with a low-stakes prompt using Agent Mode:
 
 ```txt
-The login form isn’t submitting. Iterate the the loop of attempting to submit, understanding the issue and fixing.
+The login form isn’t submitting. Iterate through the loop of attempting to submit, understanding the issue and fixing.
 ```
 
 Use it when the bug is simple or safe to attempt fixing directly. Cursor excels at debugging React, Next.js, or backend projects this way — particularly via terminal-aware agents.
@@ -106,7 +106,7 @@ Explain what’s broken and how to fix it, but do not modify any files yet.
 ### Preventive Debugging Practices
 
 - Always run locally before committing. Confirm the bug is reproducible.
-- Use spec.md and prompt plans to describe expectations clearly.
+- Use `spec.md` and prompt plans to describe expectations clearly.
 - Create checkpoint commits after major milestones.
 - Add unit and behavior tests to document expected behavior before refactoring.
 

@@ -9,7 +9,7 @@ nav_order: 5
 
 GitHub Copilot now supports organization-level instructions, allowing administrators to define guidance that applies to all repositories and all users within a GitHub organization. This is a powerful tool to promote consistency, security, and governance across all AI-assisted development workflows.
 
-This page explains how org-level instructions differ from project-level .copilot-instructions.md files and how to use each effectively.
+This page explains how org-level instructions differ from project-level `.copilot-instructions.md` files and how to use each effectively.
 
 ## What Are Organization-Level Instructions?
 
