@@ -9,39 +9,39 @@ nav_order: 1
 
 When integrating AI agents into your development process, selecting the right foundation model is critical for productivity, quality of the output code, and cost-efficiency. Based on our internal experiment and industry observations, here’s how to evaluate and use the leading models:
 
-## Claude 3.5 / 3.7 (Anthropic)
+## Claude Sonnet 4.6 (Anthropic)
 
-**Strengths:** Best for reasoning-heavy tasks like debugging, architecture decisions, system design, and breaking down complex prompts.
-**Context Window:** ~128K tokens (Claude 3.7), great for multi-file reasoning and complex feature generation.
-**When to avoid:** High-frequency interactive prompting (Claude is slightly slower) or when token costs are a concern.
+**Strengths:** Best for reasoning-heavy tasks like debugging, architecture decisions, system design, and breaking down complex prompts. With Thinking effort set to High, it excels at multi-step planning and structured output.
+**Context Window:** 200K tokens, well-suited for multi-file reasoning and complex feature generation.
+**When to avoid:** High-frequency interactive prompting where speed is the priority, or when token costs are a concern.
 
-### Ideal Use Cases Claude 3.5 / 3.7 (Anthropic)
+### Ideal Use Cases for Claude Sonnet 4.6 (Anthropic)
 
 - Writing comprehensive specs or planning files like `spec.md`, `plan.md` or `todo.md`.
-- Refactoring legacy code with unclear logic but with relatively low amount of code.
+- Refactoring legacy code with unclear logic.
 - Debugging hard-to-identify issues with long history or dependencies.
 
-## GPT-4o (OpenAI)
+## GPT-5.4 / GPT-5.4 mini (OpenAI)
 
-**Strengths:** Excellent for fast code generation, frontend scaffolding, and prototyping. Very fluent and interactive.
-**Context Window:** 128K tokens.
-**When to avoid:** Tasks that require deep logical steps across complex services — less precise in those scenarios compared to Claude.
+**Strengths:** The GPT-5.4 family covers the full spectrum from fast/cheap to flagship reasoning. GPT-5.4 mini is the go-to for speed and cost; GPT-5.4 balances quality and cost; GPT-5.5 is also available for complex reasoning at higher cost.
+**Context Window:** 400K tokens (GPT-5.4 mini), 1M tokens (GPT-5.4, GPT-5.5).
+**When to avoid:** GPT-5.4 mini for tasks requiring deep multi-step reasoning — use GPT-5.4 or GPT-5.5 instead.
 
-### Ideal Use Cases for GPT-4o (OpenAI)
+### Ideal Use Cases for GPT-5.4 / GPT-5.4 mini (OpenAI)
 
-- Quick iteration of UI components.
-- Writing test files, simple APIs, or scaffolding endpoints.
-- Real-time coding during pair-programming sessions.
+- Quick iteration of UI components and scaffolding (GPT-5.4 mini).
+- Writing test files, simple APIs, or scaffolding endpoints (GPT-5.4 mini / GPT-5.4).
+- Architectural reasoning, complex debugging, and coding tasks on par with Claude (GPT-5.4 / GPT-5.5).
 
-## Gemini 2.5 Pro (Google)
+## Gemini 2.5 Pro / Gemini 3.1 Pro (Google)
 
-**Strengths:** Best model for full-repo understanding, DevOps, and infrastructure-as-code. Extremely powerful context window.
+**Strengths:** Best model for full-repo understanding, DevOps, and infrastructure-as-code. Extremely powerful context window. Gemini 2.5 Pro is the current stable release; Gemini 3.1 Pro is available in preview with enhanced agentic and coding capabilities.
 
-**Context Window:** Up to 1M tokens (2M with special setups).
+**Context Window:** Up to 1M tokens (Gemini 2.5 Pro).
 
-**When to avoid:** Prompting conversationally on very small tasks — might be overkill in terms of latency and cost.
+**When to avoid:** Prompting conversationally on very small tasks — might be overkill in terms of latency and cost. Use Gemini 3 Flash (Preview) for lighter, high-volume tasks.
 
-### Ideal Use Cases for Gemini 2.5 Pro (Google)
+### Ideal Use Cases for Gemini 2.5 Pro / Gemini 3.1 Pro (Google)
 
 - Modifying infra using CDK/Terraform.
 - Coordinating changes across microservices or large monorepos.
@@ -49,13 +49,14 @@ When integrating AI agents into your development process, selecting the right fo
 
 ## Comparison table
 
-| **LLM**    | **Best at**                                         | **Avoid when**                          |
-| ---------- | --------------------------------------------------- | --------------------------------------- |
-| Claude 3.7 | System reasoning, specs, debugging                  | You need fast short feedback loops      |
-| GPT 4o     | UI, scaffolding, fast prompting                     | You need deep logical accuracy          |
-| Gemini 2.5 | Infra/codebase-wide operations and larger codebases | You're doing small or interactive tasks |
+| **LLM**           | **Best at**                                         | **Avoid when**                          |
+| ----------------- | --------------------------------------------------- | --------------------------------------- |
+| Claude Sonnet 4.6 | System reasoning, specs, debugging                  | You need fast short feedback loops      |
+| GPT-5.4 mini      | UI, scaffolding, fast/cheap prompting               | You need deep logical accuracy          |
+| GPT-5.4 / GPT-5.5 | Complex reasoning and coding on par with Claude    | Speed and low latency are the priority  |
+| Gemini 2.5 Pro / 3.1 Pro | Infra/codebase-wide operations and larger codebases | You're doing small or interactive tasks |
 
-Each model offers a unique advantage depending on the nature of the task. For day-to-day work, a combination approach using GPT-4o for speed and Claude/Gemini for structure often yields the best outcome.
+Each model offers a unique advantage depending on the nature of the task. For day-to-day work, a combination approach using GPT-5.4 mini for speed and Claude Sonnet 4.6 or Gemini for structure often yields the best outcome.
 
 ## Token Efficiency & Cost Awareness in AI Coding Workflows
 
@@ -84,8 +85,8 @@ This section explains why developers must learn to work efficiently, and why eng
 - **One Task per Prompt:** Instead of asking for a test, refactor, and docs in one go — split into focused steps. Reduces retries and output bloat.
 - **Limit Output Size:** Add constraints: `Return only the code, no explanation.`, `Limit to 20 lines.` Keeps the interaction sharp and reduces unnecessary token consumption, especially in tools where both input and output count toward your quota.
 - **Avoid Recursive Prompt Chains Without Limits:** Prompts like `Refine this 10 times` may sound clever but can generate thousands of tokens. Use: `Improve this once. Stop after 2 iterations.`
-- **Use Shorter Models for Simpler Tasks:** For documentation, variable naming, or test generation, models like GPT-3.5 or Claude 3.5 are cheaper and fast enough.
-  Reserve GPT-4 or Claude 3.7 for architectural reasoning or multi-file refactoring.
+- **Use Lighter Models for Simpler Tasks:** For documentation, variable naming, or test generation, faster and cheaper options like GPT-5.4 mini are often sufficient.
+  Reserve GPT-5.4, GPT-5.5, or Claude Sonnet 4.6 (with Thinking effort High) for architectural reasoning or multi-file refactoring.
 - **Use Memory Banks and Instructions Files:** Store recurring context (architecture rules, naming patterns, stack details) in `.github/copilot-instructions.md`, `.cursor/rules`, or `CLAUDE.md`. This prevents repeating the same setup context in every prompt — a common source of wasted tokens.
 
 | **Prompt Style**          | **Input Tokens** | **Output Tokens** | **Total** | **Result**               |
