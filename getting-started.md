@@ -18,10 +18,4 @@ In early 2025, we discovered that AI-assisted teams delivered projects 45% faste
 - **Vibe Coding** - Understanding the mindset shift required for AI collaboration
 - **Real Examples** - Success stories from our team experiments
 
-## Quick Links
-
-- [Getting Started Guide](GETTING_STARTED.md)
-- [Vibe Coding Philosophy](VIBE_CODING.md)
-- [Team Experiences](TEAM_EXPERIENCES.md)
-
 Ready to transform how you build software? Let's begin! 🚀
