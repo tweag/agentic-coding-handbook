@@ -5,7 +5,7 @@ parent: Getting Started
 nav_order: 2
 ---
 
-# Agentic Coding at Modus vs Vibe Coding
+# Agentic Coding vs Vibe Coding
 
 ## Our Rule of Thumb
 
@@ -13,9 +13,9 @@ nav_order: 2
 
 “Vibe coding” is a term popularized by Andrej Karpathy to describe a casual, intuition-led approach to programming with AI, where developers rely heavily on code suggestions and iterations without overthinking or deeply reviewing each step. It's most commonly used for:
 
-- Exploration and prototyping: You lean into the AI’s suggestions, quickly iterating on ideas or building throwaway features.
-- Rapid UIs and scripts: When time-to-value matters more than polish.
-- Learning and discovery: Trying absurd ideas, seeing what sticks, and building intuition for how LLMs behave.
+- Exploration and prototyping: you lean into the AI’s suggestions, quickly iterating on ideas or building throwaway features.
+- Rapid UIs and scripts: when time-to-value matters more than polish.
+- Learning and discovery: trying absurd ideas, seeing what sticks, and building intuition for how LLMs behave.
 
 A typical vibe coding session might look like:
 
@@ -81,4 +81,4 @@ To code with agents effectively — and responsibly — developers must adopt a 
 
 ## Keep Reading
 
-[Getting Started](./GETTING_STARTED.md)
+[Team Experiences](./TEAM_EXPERIENCES.md)
