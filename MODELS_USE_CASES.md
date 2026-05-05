@@ -52,7 +52,7 @@ When integrating AI agents into your development process, selecting the right fo
 | **LLM**           | **Best at**                                         | **Avoid when**                          |
 | ----------------- | --------------------------------------------------- | --------------------------------------- |
 | Claude Sonnet 4.6 | System reasoning, specs, debugging                  | You need fast short feedback loops      |
-| GPT-5.4 mini      | UI, scaffolding, fast/cheap prompting               | You need deep logical accuracy          |
+| GPT-5.4 mini      | UI, scaffolding, fast/cheap prompting               | You need deep multi-step reasoning      |
 | GPT-5.4 / GPT-5.5 | Complex reasoning and coding on par with Claude    | Speed and low latency are the priority  |
 | Gemini 2.5 Pro / 3.1 Pro | Infra/codebase-wide operations and larger codebases | You're doing small or interactive tasks |
 
