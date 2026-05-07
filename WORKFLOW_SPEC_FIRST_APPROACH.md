@@ -24,7 +24,7 @@ But here’s the key: you don’t write the spec manually. You generate it by pr
 
 **Open GitHub Copilot Chat in Agent Mode:** Make sure Agent Mode is active and has access to the codebase (using #codebase or context attachments). This gives the AI visibility into file structure, dependencies, and naming conventions, making its responses more grounded and accurate.
 
-**Use a Reasoning Model:** Pick a model or enable reasoning in models like Claude Sonnet 3.7, GPT o\* or Gemini 2.5 Pro. These models excel at multi-step thinking and structured dialogue, which is ideal for generating specs. Gemini 2.5 Pro has a larger context window, which will help to write a better plan over a larger codebase.
+**Use a Reasoning Model:** Pick a reasoning-capable model such as Claude Sonnet 4.6 (with Thinking effort set to High), GPT-5.5, or Gemini 2.5 Pro. These models excel at multi-step thinking and structured dialogue, which is ideal for generating specs. Gemini 2.5 Pro has a particularly large context window (1M tokens), which can help when writing a plan over a very large codebase, though Claude Sonnet 4.6 (200K+) is also well-suited for most projects.
 
 **Create the files plan.md and todo.md:** Creating plan.md and todo.md ensures that AI coding agents work from a clear, structured understanding of the project. plan.md captures the full implementation blueprint, while todo.md breaks it into small, promptable tasks, enabling safer, more accurate code generation, better validation checkpoints, and faster, more reliable development cycles.
 

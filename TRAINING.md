@@ -6,7 +6,7 @@
 
 [**Slide Deck**](https://docs.google.com/presentation/d/1bdjGgnPWV6Dqhi7Hy7KOZvqM1iz-u7q5M5CSBbxZi5o/edit?slide=id.g1ff7b2f3b96_0_2674&pli=1#slide=id.g1ff7b2f3b96_0_2674)
 
-[**Training Repository**](https://github.com/moacir-rodrigues-petry/agentic-coding-wip)
+[**Training Repository**](https://github.com/ModusCreateOrg/agentic-coding-training)
 
 ---
 
@@ -16,10 +16,10 @@ GitHub Copilot Agent Mode represents the next evolution in AI-assisted developme
 
 **How Agent Mode differs from other Copilot approaches:**
 
-1. **Copilot Inline** - Provides real-time code completions and suggestions within individual files
-2. **Copilot Chat** - Offers conversational assistance for coding questions and guidance
-3. **Copilot Edits** - Enables multi-file editing based on single prompts
-4. **Copilot Agent Mode** - **NEW**: Autonomous project-level operations with contextual awareness, architectural understanding, and multi-step task execution
+1. **Copilot Inline** - Provides real-time code completions and suggestions within the editor (always-on, beneath all other modes)
+2. **Ask** - Conversational assistance for coding questions, explanations, and guidance
+3. **Plan** - Generates a step-by-step implementation plan for review and approval before any code is written
+4. **Agent** - Autonomous project-level operations with contextual awareness, architectural understanding, and multi-step task execution
 
 **Why Agent Mode matters:**
 - **Project-level intelligence**: Understands entire codebases, not just individual files
@@ -41,9 +41,9 @@ GitHub Copilot Agent Mode represents the next evolution in AI-assisted developme
 
 **Required Setup (Complete 24 hours before training):**
 - [ ] **GitHub Copilot Business/Enterprise subscription** with Agent Mode enabled
-- [ ] **Supported IDE installed** (VS Code, Cursor, or JetBrains with latest Copilot extension)
-- [ ] **Fork or clone the training repository**: [Training Repo Link]
-- [ ] **Install Agent Mode plugin/extension** for your IDE
+- [ ] **Supported IDE installed** (VS Code recommended; Cursor supported; JetBrains supported but Agent Mode features may vary)
+- [ ] **Fork or clone the training repository**: https://github.com/ModusCreateOrg/agentic-coding-training
+- [ ] **Verify Agent Mode is available** in the Copilot Chat panel (Ask / Plan / Agent dropdown)
 - [ ] **Verify Agent Mode functionality** with a simple test prompt
 - [ ] **Join training Slack channel**: #copilot-agent-training
 
@@ -74,7 +74,7 @@ This intensive 1-hour workshop covers the essential aspects of GitHub Copilot Ag
 ### **1. Agent Mode Overview** 
 - What is Agent Mode and how it differs from traditional Copilot features
 - Key capabilities and use cases
-- When to use Agent Mode vs. inline/chat/edit modes
+- When to use each mode: Inline, Ask, Plan, and Agent
 
 ### **2. MCP (Model Context Protocol)**
 - Understanding Model Context Protocol architecture
@@ -165,13 +165,13 @@ Since this is a focused 1-hour overview, additional hands-on practice is availab
 ### **General Questions**
 
 **Q: What is MCP and how does it relate to Agent Mode?**
-A: Model Context Protocol (MCP) is the communication framework that enables Agent Mode to understand and interact with your development environment, providing project-aware context and enabling intelligent multi-file operations.
+A: Model Context Protocol (MCP) is an open protocol for connecting AI models to external tools and data sources — such as GitHub, Jira, Figma, or databases. Agent Mode's built-in codebase understanding (file reads, search, terminal access) is separate from MCP. MCP extends what the agent can reach *beyond* the local workspace.
 
 **Q: How quickly can teams start using Agent Mode after this training?**
 A: Teams can begin experimenting immediately with the setup guidance provided. Full integration typically takes 1-2 weeks depending on project complexity and security requirements.
 
-**Q: What's the difference between Agent Mode and Copilot Edits?**
-A: While Copilot Edits handles multi-file changes from single prompts, Agent Mode provides deeper architectural understanding, autonomous planning, and can handle complex workflows across entire projects.
+**Q: What's the difference between Ask, Plan, and Agent modes?**
+A: **Ask** is conversational — great for questions, explanations, and exploring options. **Plan** generates a structured, step-by-step implementation plan you can review and approve before any files are changed. **Agent** executes autonomously — it reads files, runs terminal commands, and implements changes across the entire project. Use Plan when you want to stay in control of scope; use Agent when the task is well-defined and you trust it to run.
 
 ### **Security and Governance**
 
